@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 5bb63535e3f94e1438960ac4feda3a11
+guid: 45278c8995f099b4994f95d17ef01b9d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7266065039524075239
-    second: DirectionalCircle_0
+      213: 1915976090460366800
+    second: bubble_idle_0
+  - first:
+      213: 5045232149638358433
+    second: bubble_idle_1
+  - first:
+      213: 3028671561712294074
+    second: bubble_idle_2
+  - first:
+      213: 3239710184736980369
+    second: bubble_idle_3
+  - first:
+      213: 7325596894302518933
+    second: bubble_idle_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +108,115 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DirectionalCircle_0
+      name: bubble_idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 256
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 91968440850c92b90800000000000000
-      internalID: -7266065039524075239
+      spriteID: 061a6fc04c67b79439e5cbe658954fc1
+      internalID: -1453210722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubble_idle_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b9360c9a8f08a4a846b3a98a763cef
+      internalID: 1892852848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubble_idle_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42525b22fbd900c48bb38a8fa7ee815f
+      internalID: -1141747311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubble_idle_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e521d536ad3c14cbdde8aa3eb76c87
+      internalID: 170565484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubble_idle_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5bf529c675458409e075d95a65dd8d
+      internalID: -569069542
       vertices: []
       indices: 
       edges: []
@@ -138,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f0009ef20007b7a4f90e470a64198eed
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DirectionalCircle_0: -7266065039524075239
+      bubble_idle_0: -1453210722
+      bubble_idle_1: 1892852848
+      bubble_idle_2: -1141747311
+      bubble_idle_3: 170565484
+      bubble_idle_4: -569069542
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
