@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -15,7 +16,9 @@ public class GameManager : MonoBehaviour
     {
         if (_instance != null && _instance != this)
         {
+            Debug.LogWarning("Instance already exists");
             Destroy(this.gameObject);
+
         }
         else
         {
