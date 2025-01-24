@@ -8,18 +8,20 @@ public class PlayerMovement : MonoBehaviour
     public float horizontalAcceleration;
     public float horizontalDeceleration;
     public Rigidbody2D rb;
+    [SerializeField] private CameraMovement camMovement;
+    
 
-    public KeyCode moveLeftKey = KeyCode.A;
-    public KeyCode moveRightKey = KeyCode.D;
+    public const KeyCode moveLeftKey = KeyCode.A;
+    public const KeyCode moveRightKey = KeyCode.D;
 
     private Vector2 currentPos = Vector2.zero;
     private Vector2 moveVec = Vector2.zero;
+    private Vector3 playerStartPos = Vector3.zero;
     private float horizontalMove = 0f;
-
 
     void Start()
     {
-        
+        playerStartPos = transform.position;
     }
 
     private void FixedUpdate()
@@ -46,7 +48,22 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 DefaultMovement()
     {
-        return Vector2.up * upSpeed;
+        Bounds bounds = camMovement.OrthographicBounds();
+        Vector2 horizontalCorrection = Vector2.zero;
+        if (transform.position.x > camMovement.transform.position.x + bounds.extents.x)
+        { 
+            horizontalCorrection = new Vector2(camMovement.transform.position.x + bounds.extents.x, transform.position.y) - rb.position; 
+        }
+        else if (transform.position.x < camMovement.transform.position.x - bounds.extents.x)
+        {
+            horizontalCorrection = new Vector2(camMovement.transform.position.x - bounds.extents.x, transform.position.y) - rb.position;
+        }
+
+        if (transform.position.y < camMovement.transform.position.y - bounds.extents.y) { Kill(); }
+
+        if (Input.GetKey(KeyCode.Space)) { return Vector2.up * upSpeed * 1.5f; }
+        return Vector2.up * upSpeed + horizontalCorrection;
+
     }
 
     private Vector2 ControledMovement()
@@ -75,5 +92,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
         return Vector2.right * horizontalMove;
+    }
+
+    public void Kill()
+    {
+        transform.position = playerStartPos;
+        camMovement.transform.position = playerStartPos + Vector3.down * camMovement.targetOffset + camMovement.transform.position.z * Vector3.forward;
     }
 }
