@@ -271,7 +271,7 @@ public class PlayerController : MonoBehaviour
 
         invurnerableTimer = invurnerableTime;
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-        Health -= enemy.DamagePhysicsMultiplier;
+        Health -= enemy.DamageOnCollision;
         Vector2 forceDir = rb.position - collision.otherRigidbody.position;
         forceDir = forceDir.normalized;
         rb.AddForce(forceDir * pushBackForce);
@@ -284,7 +284,7 @@ public class PlayerController : MonoBehaviour
 
         invurnerableTimer = invurnerableTime;
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-        Health -= enemy.DamagePhysicsMultiplier;
+        Health -= enemy.DamageOnCollision;
         Vector2 forceDir = rb.position - (Vector2)collision.transform.position;
         forceDir = forceDir.normalized;
         rb.AddForce(forceDir * pushBackForce);

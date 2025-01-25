@@ -478,6 +478,10 @@ PrefabInstance:
       propertyPath: camMovement
       value: 
       objectReference: {fileID: 1877247252}
+    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
+      propertyPath: pushBackForce
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

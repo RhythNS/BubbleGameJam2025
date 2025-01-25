@@ -9,10 +9,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Vector2 speedRange = new Vector2(0.08f, 0.08f);
     [SerializeField] private Vector2 sizeRange = new Vector2(1.0f, 1.0f);
 
-    public float DamagePhysicsMultiplier => damagePhysicsMultiplier;
-    [SerializeField] private float damagePhysicsMultiplier;
-    public float DamageOnHit => damageOnHit;
-    [SerializeField] private float damageOnHit;
+    public float DamageOnCollision => damageOnCollision;
+    [SerializeField] private float damageOnCollision;
+    public float DamageOnHurtbox => damageOnHurtbox;
+    [SerializeField] private float damageOnHurtbox;
 
     private float speed;
     private float size;

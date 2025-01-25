@@ -219,8 +219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedRange: {x: 0.08, y: 0.08}
   sizeRange: {x: 1, y: 1}
-  damagePhysicsMultiplier: 1
-  damageOnHit: 0
+  damageOnCollision: 20
+  damageOnHurtbox: 35
 --- !u!114 &1188229031641735086
 MonoBehaviour:
   m_ObjectHideFlags: 0
