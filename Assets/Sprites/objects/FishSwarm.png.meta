@@ -1,0 +1,495 @@
+fileFormatVersion: 2
+guid: 6b20d4ace3f92e248b3c60c65e5139e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -191494213412937270
+    second: FishSwarm_0
+  - first:
+      213: 688716565291525174
+    second: FishSwarm_1
+  - first:
+      213: 1827512727068220297
+    second: FishSwarm_2
+  - first:
+      213: -8753873243533471582
+    second: FishSwarm_3
+  - first:
+      213: 3950188657553534318
+    second: FishSwarm_4
+  - first:
+      213: -2427170439953510052
+    second: FishSwarm_5
+  - first:
+      213: 2015715895599559390
+    second: FishSwarm_6
+  - first:
+      213: 3335640534273143677
+    second: FishSwarm_7
+  - first:
+      213: -2220695965143311864
+    second: FishSwarm_8
+  - first:
+      213: 5177086603177484880
+    second: FishSwarm_9
+  - first:
+      213: 59064529122507857
+    second: FishSwarm_10
+  - first:
+      213: 4581305545806475665
+    second: FishSwarm_11
+  - first:
+      213: -6398089529596636799
+    second: FishSwarm_12
+  - first:
+      213: 5413356571564756766
+    second: FishSwarm_13
+  - first:
+      213: -8268638537046033055
+    second: FishSwarm_14
+  - first:
+      213: 7690603245276866855
+    second: FishSwarm_15
+  - first:
+      213: 2691704623401534574
+    second: FishSwarm_16
+  - first:
+      213: -7862501179093237368
+    second: FishSwarm_17
+  - first:
+      213: 5565433086015224202
+    second: FishSwarm_18
+  - first:
+      213: 6459267958656924038
+    second: FishSwarm_19
+  - first:
+      213: 7682618477061425629
+    second: FishSwarm_20
+  - first:
+      213: 3919063900468881200
+    second: FishSwarm_21
+  - first:
+      213: 2693937743574303606
+    second: FishSwarm_22
+  - first:
+      213: 3929488881539906240
+    second: FishSwarm_23
+  - first:
+      213: 165632655335841830
+    second: FishSwarm_24
+  - first:
+      213: 4999085581440554151
+    second: FishSwarm_25
+  - first:
+      213: -6800630141329128363
+    second: FishSwarm_26
+  - first:
+      213: -6203033227349178497
+    second: FishSwarm_27
+  - first:
+      213: -7264564606321649824
+    second: FishSwarm_28
+  - first:
+      213: -4775897735927853430
+    second: FishSwarm_29
+  - first:
+      213: -5688841563315353526
+    second: FishSwarm_30
+  - first:
+      213: -5969044953809571938
+    second: FishSwarm_31
+  - first:
+      213: -7866322260748563549
+    second: FishSwarm_32
+  - first:
+      213: -6428213865849238858
+    second: FishSwarm_33
+  - first:
+      213: -9197887615591852635
+    second: FishSwarm_34
+  - first:
+      213: -8539937096123970331
+    second: FishSwarm_35
+  - first:
+      213: 4909288943704758511
+    second: FishSwarm_36
+  - first:
+      213: 8179932874981995619
+    second: FishSwarm_37
+  - first:
+      213: -2983209407262427197
+    second: FishSwarm_38
+  - first:
+      213: -4113419214487696574
+    second: FishSwarm_39
+  - first:
+      213: -2179206344580671717
+    second: FishSwarm_40
+  - first:
+      213: -8838295229431431535
+    second: FishSwarm_41
+  - first:
+      213: 9208609341950062289
+    second: FishSwarm_42
+  - first:
+      213: -7339408100358103397
+    second: FishSwarm_43
+  - first:
+      213: -3268281734329212142
+    second: FishSwarm_44
+  - first:
+      213: -3753161117250574692
+    second: FishSwarm_45
+  - first:
+      213: -3838650908055079171
+    second: FishSwarm_46
+  - first:
+      213: 2770962578754262256
+    second: FishSwarm_47
+  - first:
+      213: -3705768149684881957
+    second: FishSwarm_48
+  - first:
+      213: 90979260952219764
+    second: FishSwarm_49
+  - first:
+      213: 2778505556285646031
+    second: FishSwarm_50
+  - first:
+      213: 7918019556412215550
+    second: FishSwarm_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FishSwarm_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 796
+        width: 308
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1aaf8070da75df0800000000000000
+      internalID: -191494213412937270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishSwarm_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 796
+        width: 308
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634e0213110de8900800000000000000
+      internalID: 688716565291525174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishSwarm_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 616
+        width: 308
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b18678421ac5910800000000000000
+      internalID: 1827512727068220297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishSwarm_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 616
+        width: 308
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0146e3aaef38680800000000000000
+      internalID: -8753873243533471582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishSwarm_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 436
+        width: 308
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d6141b7a3e1d630800000000000000
+      internalID: 3950188657553534318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishSwarm_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 436
+        width: 308
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c511e353855f05ed0800000000000000
+      internalID: -2427170439953510052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishSwarm_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 308
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2f1556de249fb10800000000000000
+      internalID: 2015715895599559390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishSwarm_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 256
+        width: 308
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73beb794639a4e20800000000000000
+      internalID: 3335640534273143677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishSwarm_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 76
+        width: 308
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052e3d116d4b8d740800000000000000
+      internalID: 5177086603177484880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishSwarm_8
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 77
+        width: 306
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c76fe8a3b11fb40a558ac6cf254812
+      internalID: 819415895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 572f8e44b5c88a74c83c729ec50b0193
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FishSwarm_10: 260473251
+      FishSwarm_8: 819415895
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
