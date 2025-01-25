@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     public float horizontalDeceleration;
     public float rotationSpeed;
     public Rigidbody2D rb;
-    [SerializeField] private CameraMovement camMovement;
+    private CameraMovement camMovement;
     
 
     public KeyCode moveLeftKey = KeyCode.A;
@@ -67,6 +67,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        camMovement = Camera.main.GetComponent<CameraMovement>();
         // DebugRestart();
         Deactivate();
     }
