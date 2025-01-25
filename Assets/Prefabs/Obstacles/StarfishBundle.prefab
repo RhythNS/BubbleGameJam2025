@@ -29,8 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5217343772909710920}
-  - {fileID: 1626594962357373860}
+  - {fileID: 5778789764020582996}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2869269739705437370
@@ -45,12 +44,11 @@ GameObject:
   - component: {fileID: 7320560192218334433}
   - component: {fileID: 237603630706413169}
   - component: {fileID: 2161857588072498216}
-  - component: {fileID: 6538335800413254180}
   - component: {fileID: 5153189513978087392}
   - component: {fileID: 6058586491561890420}
   - component: {fileID: 3398139217357164063}
   m_Layer: 0
-  m_Name: Starfish
+  m_Name: StarfishSprite
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,12 +62,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2869269739705437370}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.17799547}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.644217, y: 1.7501143, z: 0.011886209}
   m_LocalScale: {x: 0.54038, y: 0.54038, z: 0.54038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7164256100133629004}
+  m_Father: {fileID: 5778789764020582996}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7320560192218334433
 SpriteRenderer:
@@ -194,23 +192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 144c25dcbdfa0394b8c2b504b9702055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6538335800413254180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2869269739705437370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57e931381613bbb45b34ab488a8028c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyTransform: {fileID: 5217343772909710920}
-  waypoints:
-  - {fileID: 1626594962357373860}
-  speed: 1
-  flip: 0
 --- !u!50 &5153189513978087392
 Rigidbody2D:
   serializedVersion: 5
@@ -276,6 +257,57 @@ MonoBehaviour:
   sizeRange: {x: 0.5403, y: 0.5403}
   damagePhysicsMultiplier: 1
   damageOnHit: 0
+--- !u!1 &4396191290261097469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5778789764020582996}
+  - component: {fileID: 5704655431032195834}
+  m_Layer: 0
+  m_Name: Starfish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5778789764020582996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4396191290261097469}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.644217, y: -1.7501143, z: 0.16610926}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5217343772909710920}
+  - {fileID: 1626594962357373860}
+  m_Father: {fileID: 7164256100133629004}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5704655431032195834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4396191290261097469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e931381613bbb45b34ab488a8028c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTransform: {fileID: 5778789764020582996}
+  waypoints:
+  - {fileID: 1626594962357373860}
+  speed: 1
+  flip: 0
 --- !u!1 &5256834106787635702
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,9 +333,9 @@ Transform:
   m_GameObject: {fileID: 5256834106787635702}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -11.63, z: 0}
+  m_LocalPosition: {x: -1.644217, y: -10.949885, z: -0.16610926}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7164256100133629004}
+  m_Father: {fileID: 5778789764020582996}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
