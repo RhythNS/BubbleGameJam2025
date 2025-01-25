@@ -47,12 +47,10 @@ public class GameManager : MonoBehaviour
     {
         // check for correct state
         player.GetComponent<PlayerStarter>().DoTheThing();
-        SwitchToGame();
     }
 
     public void SwitchToGame()
     {
-        player.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
         player.Activate();
         levelLoader.Begin(player.transform);
     }

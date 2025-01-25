@@ -34,6 +34,7 @@ public class LevelLoader : MonoBehaviour
     {
         enabled = true;
         toTrack = player;
+        atBiome = 0;
         LoadNextLevel();
     }
 
@@ -120,6 +121,5 @@ public class LevelLoader : MonoBehaviour
             currentLevels.RemoveAt(currentLevels.Count - 1);
             Destroy(minLevel.gameObject);
         }
-
     }
 }
