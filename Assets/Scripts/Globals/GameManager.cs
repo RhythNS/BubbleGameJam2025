@@ -5,8 +5,12 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
 
     public static GameManager Instance { get { return _instance; } }
-
+    
+    public PlayerController Player => player;
     [SerializeField] private PlayerController player;
+
+    public Whale Whale => whale;
+    [SerializeField] private Whale whale;
 
     [System.Serializable]
     public enum State { MainMenu, Game, GameOver, Win }
@@ -46,5 +50,7 @@ public class GameManager : MonoBehaviour
     public void SwitchToGameOver()
     {
         player.Deactivate();
+
+        // 
     }
 }
