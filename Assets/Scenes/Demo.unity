@@ -710,7 +710,7 @@ GameObject:
   - component: {fileID: 1932673791}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -760,13 +760,16 @@ MonoBehaviour:
   healthGroth: 1.5
   baseHealth: 30
   minHealthToBlowAir: 10
-  blowAirSpeed: 1
-  boostSpeed: 0.1
+  blowAirSpeed: 0.5
+  boostMaxSpeed: 0.05
+  blowAirDisableTime: 3
+  boostAccelertation: 0.01
+  boostDeccelertation: 0.97
   upSpeed: 0.05
   horizontalMaxSpeed: 0.08
   horizontalMinSpeed: 0.01
-  horizontalAcceleration: 1
-  velocityDecceleration: 1
+  horizontalAcceleration: 0.01
+  horizontalDeceleration: 0.97
   rotationSpeed: 300
   rb: {fileID: 1932673787}
   camMovement: {fileID: 214007788}
@@ -777,6 +780,7 @@ MonoBehaviour:
   lookLeftKey: 276
   lookUpKey: 273
   blowAirKey: 32
+  blowBubble: {fileID: 5663895460944251461, guid: 1aa71f380c2b1cf448e9f69d8a8d14e0, type: 3}
 --- !u!212 &1932673789
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -60,6 +60,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 baseScale;
     private Vector3 direction = Vector3.up;
 
+    [SerializeField] private GameObject blowBubble;
+
     void Start()
     {
         playerStartPos = transform.position;
@@ -214,11 +216,19 @@ public class PlayerController : MonoBehaviour
 
         Vector2 boostDir = Quaternion.AngleAxis(rb.rotation, Vector3.back) * Vector2.up;
         boostDir = new Vector2(boostDir.x, -boostDir.y);
+
+        Vector3 bubbleSpawnPos = transform.position + new Vector3(-boostDir.x, -boostDir.y, 0) * transform.localScale.x * 2;
+        GameObject bubble = Instantiate(blowBubble, bubbleSpawnPos, Quaternion.identity);
+        BlowBubble bubbleBehavoiur = bubble.GetComponent<BlowBubble>();
+
         boostVelocity += boostDir * boostAccelertation;
         if (boostVelocity.magnitude > boostMaxSpeed)
         {
             boostVelocity = boostVelocity.normalized * boostMaxSpeed;
         }
+
+        bubbleBehavoiur.velocity = -boostVelocity;
+
         return boostVelocity;
     }
 
