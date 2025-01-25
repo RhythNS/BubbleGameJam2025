@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.029251933}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2295750583916289717}
@@ -211,8 +211,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedRange: {x: 0.08, y: 0.08}
-  sizeRange: {x: 1, y: 1}
-  damagePhysicsMultiplier: 0
+  sizeRange: {x: 0.4, y: 0.45}
+  damagePhysicsMultiplier: 4
   damageOnHit: 0
 --- !u!1 &6859349419783277499
 GameObject:
