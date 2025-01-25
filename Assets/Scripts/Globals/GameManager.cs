@@ -1,10 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using UnityEditor.Overlays;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,12 +6,18 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get { return _instance; } }
 
+    [SerializeField] private PlayerController player;
+
+    [System.Serializable]
+    public enum State { MainMenu, Game, GameOver, Win }
+    [SerializeField] private State currentState;
+
     private void Awake()
     {
         if (_instance != null && _instance != this)
         {
             Debug.LogWarning("Instance already exists");
-            Destroy(this.gameObject);
+            Destroy(gameObject);
 
         }
         else
@@ -26,6 +26,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public float test;
+    private void Start()
+    {
+        player.Deactivate();
+    }
 
+    public void RequestStart()
+    {
+        // check for correct state
+        // play intro scene
+        SwitchToGame();
+    }
+
+    public void SwitchToGame()
+    {
+        player.Activate();
+    }
+
+    public void SwitchToGameOver()
+    {
+        player.Deactivate();
+    }
 }

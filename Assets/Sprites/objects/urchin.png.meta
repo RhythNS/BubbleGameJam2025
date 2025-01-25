@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      urchin_0: -3070057353707388163
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
