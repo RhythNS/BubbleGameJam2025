@@ -28,6 +28,9 @@ public class PlayerController : MonoBehaviour
     public float blowAirSpeed;
     public float boostMaxSpeed;
     public float blowAirDisableTime;
+    public float airLossPercent;
+    public float airBubbleMinHealth;
+    private float airBubbleCounter = 0;
     private float blowAirDisableTimer;
     private Vector2 boostVelocity;
     public float boostAccelertation;
@@ -217,17 +220,24 @@ public class PlayerController : MonoBehaviour
         Vector2 boostDir = Quaternion.AngleAxis(rb.rotation, Vector3.back) * Vector2.up;
         boostDir = new Vector2(boostDir.x, -boostDir.y);
 
-        Vector3 bubbleSpawnPos = transform.position + new Vector3(-boostDir.x, -boostDir.y, 0) * transform.localScale.x * 2;
-        GameObject bubble = Instantiate(blowBubble, bubbleSpawnPos, Quaternion.identity);
-        BlowBubble bubbleBehavoiur = bubble.GetComponent<BlowBubble>();
-
         boostVelocity += boostDir * boostAccelertation;
         if (boostVelocity.magnitude > boostMaxSpeed)
         {
             boostVelocity = boostVelocity.normalized * boostMaxSpeed;
         }
 
-        bubbleBehavoiur.velocity = -boostVelocity;
+        airBubbleCounter += blowAirSpeed * (1f - airLossPercent);
+        if (airBubbleCounter >= airBubbleMinHealth)
+        {
+            airBubbleCounter = 0;
+
+            Vector3 bubbleSpawnPos = transform.position + new Vector3(-boostDir.x, -boostDir.y, 0) * transform.localScale.x * 2.5f;
+            GameObject bubble = Instantiate(blowBubble, bubbleSpawnPos, Quaternion.identity);
+            BlowBubble bubbleBehavoiur = bubble.GetComponent<BlowBubble>();
+
+            bubbleBehavoiur.velocity = -boostVelocity;
+            bubbleBehavoiur.Health = airBubbleMinHealth;
+        }
 
         return boostVelocity;
     }

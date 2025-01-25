@@ -763,6 +763,8 @@ MonoBehaviour:
   blowAirSpeed: 0.5
   boostMaxSpeed: 0.05
   blowAirDisableTime: 3
+  airLossPercent: 0.25
+  airBubbleMinHealth: 5
   boostAccelertation: 0.01
   boostDeccelertation: 0.97
   upSpeed: 0.05
