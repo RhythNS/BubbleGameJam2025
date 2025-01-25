@@ -5,7 +5,6 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private PlayerController PlayerMovement;
     public Camera cam;
 
-
     public float targetOffset;
     public float maxSlowDownPercent;
     public float maxSpeedUpPercent;

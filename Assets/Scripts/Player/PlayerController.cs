@@ -65,7 +65,13 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private GameObject blowBubble;
 
-    void Start()
+    private void Awake()
+    {
+        // DebugRestart();
+        Deactivate();
+    }
+
+    private void DebugRestart()
     {
         playerStartPos = transform.position;
         baseScale = transform.localScale;
@@ -92,6 +98,18 @@ public class PlayerController : MonoBehaviour
 
         Grow();
         LookDirection();
+    }
+
+    public void Deactivate()
+    {
+        enabled = false;
+        rb.simulated = false;
+    }
+
+    public void Activate()
+    {
+        enabled = true;
+        rb.simulated = true;
     }
 
     private void LookDirection()
