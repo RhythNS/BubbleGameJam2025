@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
 
     public void SwitchToGame()
     {
+        player.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
         player.Activate();
         levelLoader.Begin(player.transform);
     }

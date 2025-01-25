@@ -110,6 +110,7 @@ public class PlayerController : MonoBehaviour
 
     public void Activate()
     {
+        transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
         enabled = true;
         rb.simulated = true;
         baseScale = transform.localScale;
