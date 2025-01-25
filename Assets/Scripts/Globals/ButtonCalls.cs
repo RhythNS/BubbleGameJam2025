@@ -7,6 +7,11 @@ public class ButtonCalls : MonoBehaviour
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject upgradeMenu;
     [SerializeField] private int[] upgradeCosts = new int[4] { 50, 100, 200, 500};
+    public float[] healthMults = new float[5] {1.0f, 1.25f, 1.5f, 1.75f, 2.0f };
+    public float[] regenMults = new float[5] {1.0f, 1.25f, 1.5f, 1.75f, 2.0f };
+    public float[] moveSpeedMults = new float[5] {1.0f, 1.25f, 1.5f, 1.75f, 2.0f };
+    public float[] airLossMults = new float[5] {1.0f, 0.85f, 0.7f, 0.55f, 0.4f };
+    public float[] boostMults = new float[5] {1.0f, 1.25f, 1.5f, 1.75f, 2.0f };
     [SerializeField] private TMP_Text healthUpgradeText;
     [SerializeField] private Image[] healthUpgradeImages;
     [SerializeField] private TMP_Text regenUpgradeText;
@@ -18,22 +23,22 @@ public class ButtonCalls : MonoBehaviour
     [SerializeField] private TMP_Text boostUpgradeText;
     [SerializeField] private Image[] boostUpgradeImages;
     [SerializeField] private TMP_Text pointsText;
-    [HideInInspector] public int Points
+    [HideInInspector] public float Points
     {
         get { return _points; }
         set 
         { 
             _points = value;
-            pointsText.text = "Points\r\n" + _points.ToString();
+            pointsText.text = "Points\r\n" + ((int)_points).ToString();
         }
     }
-    private int _points = 9999;
+    private float _points = 0;
 
-    private int healthLevel = 0;
-    private int regenLevel = 0;
-    private int moveSpeedLevel = 0;
-    private int airLossLevel = 0;
-    private int boostLevel = 0;
+    [HideInInspector] public int healthLevel = 0;
+    [HideInInspector] public int regenLevel = 0;
+    [HideInInspector] public int moveSpeedLevel = 0;
+    [HideInInspector] public int airLossLevel = 0;
+    [HideInInspector] public int boostLevel = 0;
 
     void Start()
     {

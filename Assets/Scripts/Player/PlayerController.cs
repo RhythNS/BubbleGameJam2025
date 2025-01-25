@@ -1,8 +1,11 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float pointsPerSecond;
+
     public float maxHealth;
     public float maxSizeMult;
     public float minSizeMult;
@@ -71,9 +74,29 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private GameObject blowBubble;
 
+    private float _maxHealth;
+    private float _healthGroth;
+    private float _horizontalAcceleration;
+    private float _horizontalMaxSpeed;
+    private float _airLossPercent;
+    private float _blowAirSpeed;
+    private float _boostAccelertation;
+    private float _boostMaxSpeed;
+    private float _rotationSpeed;
+
     private void Awake()
     {
         camMovement = Camera.main.GetComponent<CameraMovement>();
+        _maxHealth = maxHealth;
+        _healthGroth = healthGroth;
+        _horizontalAcceleration = horizontalAcceleration;
+        _horizontalMaxSpeed = horizontalMaxSpeed;
+        _airLossPercent = airLossPercent;
+        _blowAirSpeed = blowAirSpeed;
+        _boostAccelertation = boostAccelertation;
+        _boostMaxSpeed = boostMaxSpeed;
+        _rotationSpeed = rotationSpeed;
+        Deactivate();
     }
 
     private void FixedUpdate()
@@ -88,7 +111,7 @@ public class PlayerController : MonoBehaviour
         {
             Health -= 10f;
         }
-
+        GameManager.Instance.ButtonCalls.Points += pointsPerSecond * Time.deltaTime;
         if (blowAirDisableTimer > 0)
         {
             blowAirDisableTimer -= Time.deltaTime;
@@ -114,7 +137,18 @@ public class PlayerController : MonoBehaviour
         enabled = true;
         rb.simulated = true;
         baseScale = transform.localScale;
-        Health = baseHealth;
+
+        maxHealth = _maxHealth * GameManager.Instance.ButtonCalls.healthMults[GameManager.Instance.ButtonCalls.healthLevel];
+        healthGroth = _healthGroth * GameManager.Instance.ButtonCalls.regenMults[GameManager.Instance.ButtonCalls.regenLevel];
+        horizontalAcceleration = _horizontalAcceleration * GameManager.Instance.ButtonCalls.moveSpeedMults[GameManager.Instance.ButtonCalls.moveSpeedLevel];
+        horizontalMaxSpeed = _horizontalMaxSpeed * GameManager.Instance.ButtonCalls.moveSpeedMults[GameManager.Instance.ButtonCalls.moveSpeedLevel];
+        rotationSpeed = _rotationSpeed * GameManager.Instance.ButtonCalls.moveSpeedMults[GameManager.Instance.ButtonCalls.moveSpeedLevel];
+        airLossPercent = _airLossPercent * GameManager.Instance.ButtonCalls.airLossMults[GameManager.Instance.ButtonCalls.airLossLevel];
+        blowAirSpeed = _blowAirSpeed * GameManager.Instance.ButtonCalls.airLossMults[GameManager.Instance.ButtonCalls.airLossLevel];
+        boostAccelertation = _boostAccelertation * GameManager.Instance.ButtonCalls.boostMults[GameManager.Instance.ButtonCalls.boostLevel];
+        boostMaxSpeed = _boostMaxSpeed * GameManager.Instance.ButtonCalls.boostMults[GameManager.Instance.ButtonCalls.boostLevel];
+
+        Health = baseHealth * maxHealth;
     }
 
     private void LookDirection()
@@ -273,9 +307,10 @@ public class PlayerController : MonoBehaviour
         invurnerableTimer = invurnerableTime;
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
         Health -= enemy.DamageOnCollision;
-        Vector2 forceDir = rb.position - collision.otherRigidbody.position;
+        //Vector2 forceDir = transform.position - collision.transform.position;
+        Vector2 forceDir = transform.position - collision.transform.position;
         forceDir = forceDir.normalized;
-        rb.AddForce(forceDir * pushBackForce);
+        StartCoroutine(PushAfterEnemyHit(forceDir));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -286,9 +321,22 @@ public class PlayerController : MonoBehaviour
         invurnerableTimer = invurnerableTime;
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
         Health -= enemy.DamageOnCollision;
-        Vector2 forceDir = rb.position - (Vector2)collision.transform.position;
+        Vector2 forceDir = transform.position - collision.transform.position;
         forceDir = forceDir.normalized;
-        rb.AddForce(forceDir * pushBackForce);
+        StartCoroutine(PushAfterEnemyHit(forceDir)); 
+    }
+
+    IEnumerator PushAfterEnemyHit(Vector2 direction)
+    {
+        WaitForEndOfFrame wait = new WaitForEndOfFrame();
+        float timer = 0.3f;
+        while (true) 
+        {
+            rb.AddForce(direction * pushBackForce);
+            timer -= Time.deltaTime;
+            if (timer < 0) { break; }
+            yield return wait;
+        }
     }
 
     public void Kill()
