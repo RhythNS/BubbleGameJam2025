@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
     public LevelLoader LevelLoader => levelLoader;
     [SerializeField] private LevelLoader levelLoader;
 
+    public ButtonCalls ButtonCalls => buttonCalls;
+    [SerializeField] private ButtonCalls buttonCalls;
+
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -35,18 +38,21 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        player.Deactivate();
+        player.transform.position = whale.StartLocation.position;
+        player.transform.localScale = new Vector3(0.001f, 0.001f, 0.001f);
+        FadeUI.Instance.FadeToClear(() => { });
     }
 
     public void RequestStart()
     {
         // check for correct state
-        // play intro scene
+        player.GetComponent<PlayerStarter>().DoTheThing();
         SwitchToGame();
     }
 
     public void SwitchToGame()
     {
+        player.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
         player.Activate();
         levelLoader.Begin(player.transform);
     }
@@ -54,10 +60,20 @@ public class GameManager : MonoBehaviour
     public void SwitchToGameOver()
     {
         player.Deactivate();
-        // fade to black
+        FadeUI.Instance.FadeToBlack(SwitchToGameOver2);
+    }
+
+    private void SwitchToGameOver2()
+    {
         levelLoader.DeleteAllLevels();
         // Move camera to whale
-        // fade to clear
-        // show menu
+        player.transform.position = whale.StartLocation.position;
+        player.transform.localScale = new Vector3(0.001f, 0.001f, 0.001f);
+        FadeUI.Instance.FadeToClear(SwitchToGameOver3);
+    }
+
+    private void SwitchToGameOver3()
+    {
+        buttonCalls.OnClickMainMenu();
     }
 }

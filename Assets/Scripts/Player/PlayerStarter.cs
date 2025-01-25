@@ -14,7 +14,7 @@ public class PlayerStarter : MonoBehaviour
         animation2 = Camera.main.GetComponent<Animation>();
         movement = Camera.main.GetComponent<CameraMovement>();
 
-        DoTheThing();
+        //DoTheThing();
     }
 
     public void DoTheThing()

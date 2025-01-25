@@ -1,11 +1,9 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class ButtonCalls : MonoBehaviour
 {
-    //[SerializeField] private PlayerController playerController;
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject upgradeMenu;
     [SerializeField] private int[] upgradeCosts = new int[4] { 50, 100, 200, 500};
@@ -47,14 +45,9 @@ public class ButtonCalls : MonoBehaviour
         boostUpgradeText.text = "BOOST\r\n" + upgradeCosts[boostLevel].ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void OnClickPlay()
     {
-        //GameManager.Instance.RequestStart();
+        GameManager.Instance.RequestStart();
         mainMenu.SetActive(false);
     }
 
@@ -111,5 +104,4 @@ public class ButtonCalls : MonoBehaviour
     {
         OnClickUpgrade(ref boostLevel, boostUpgradeImages, boostUpgradeText, "BOOST");
     }
-
 }
