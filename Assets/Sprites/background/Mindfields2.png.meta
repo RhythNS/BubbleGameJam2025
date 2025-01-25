@@ -1,0 +1,407 @@
+fileFormatVersion: 2
+guid: 07e58e0cc361a8142bcc7517789cb9c0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -899120246942514967
+    second: Mindfields2_0
+  - first:
+      213: -1565506187746937077
+    second: Mindfields2_1
+  - first:
+      213: 241495837654318900
+    second: Mindfields2_2
+  - first:
+      213: -4268890762272359209
+    second: Mindfields2_3
+  - first:
+      213: 4081337415611164647
+    second: Mindfields2_4
+  - first:
+      213: -3494103362079259370
+    second: Mindfields2_5
+  - first:
+      213: -2513627414342543688
+    second: Mindfields2_6
+  - first:
+      213: -4767161176701096631
+    second: Mindfields2_7
+  - first:
+      213: -4549403740499067045
+    second: Mindfields2_8
+  - first:
+      213: 3530066943658150349
+    second: Mindfields2_9
+  - first:
+      213: -4879598950612465702
+    second: Mindfields2_10
+  - first:
+      213: -225165088613974612
+    second: Mindfields2_11
+  - first:
+      213: 850566429919509243
+    second: Mindfields2_12
+  - first:
+      213: -5564593072686045492
+    second: Mindfields2_13
+  - first:
+      213: 4022352806641018990
+    second: Mindfields2_14
+  - first:
+      213: 1390572253839602602
+    second: Mindfields2_15
+  - first:
+      213: -1226997776458787801
+    second: Mindfields2_16
+  - first:
+      213: 2567854690324759667
+    second: Mindfields2_17
+  - first:
+      213: 1871516406587254548
+    second: Mindfields2_18
+  - first:
+      213: -1070133190407563948
+    second: Mindfields2_19
+  - first:
+      213: -1572584560301797817
+    second: Mindfields2_20
+  - first:
+      213: -690229590500554224
+    second: Mindfields2_21
+  - first:
+      213: -3568875689282749293
+    second: Mindfields2_22
+  - first:
+      213: 2510073449671277186
+    second: Mindfields2_23
+  - first:
+      213: -3115464664081932392
+    second: Mindfields2_24
+  - first:
+      213: 1501183961521651164
+    second: Mindfields2_25
+  - first:
+      213: -8841549437191187418
+    second: Mindfields2_26
+  - first:
+      213: 5727190362909742983
+    second: Mindfields2_27
+  - first:
+      213: 527245877974938413
+    second: Mindfields2_28
+  - first:
+      213: 6662385445143755041
+    second: Mindfields2_29
+  - first:
+      213: 3791613440918089078
+    second: Mindfields2_30
+  - first:
+      213: -3925767806200539688
+    second: Mindfields2_31
+  - first:
+      213: -3432649053861340408
+    second: Mindfields2_32
+  - first:
+      213: 2281029347411606218
+    second: Mindfields2_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mindfields2_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 3446
+        width: 1922
+        height: 561
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e041ae26eea583f0800000000000000
+      internalID: -899120246942514967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mindfields2_1
+      rect:
+        serializedVersion: 2
+        x: 3427
+        y: 3293
+        width: 663
+        height: 782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07faa9aa64364ae0800000000000000
+      internalID: -1565506187746937077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mindfields2_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 2263
+        width: 1245
+        height: 756
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ffe125f27f95300800000000000000
+      internalID: 241495837654318900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mindfields2_5
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 2176
+        width: 1444
+        height: 893
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61584c63183728fc0800000000000000
+      internalID: -3494103362079259370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mindfields2_30
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 157
+        width: 1922
+        height: 1719
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67de48fe5548e9430800000000000000
+      internalID: 3791613440918089078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mindfields2_31
+      rect:
+        serializedVersion: 2
+        x: 3427
+        y: 1080
+        width: 663
+        height: 782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d590c8dafed489c0800000000000000
+      internalID: -3925767806200539688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mindfields2_33
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 566
+        width: 862
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acab5b62b18d7af10800000000000000
+      internalID: 2281029347411606218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f511c160b4d35774c967b1e3feccaa3c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mindfields2_0: -899120246942514967
+      Mindfields2_1: -1565506187746937077
+      Mindfields2_10: -4879598950612465702
+      Mindfields2_11: -225165088613974612
+      Mindfields2_12: 850566429919509243
+      Mindfields2_13: -5564593072686045492
+      Mindfields2_14: 4022352806641018990
+      Mindfields2_15: 1390572253839602602
+      Mindfields2_16: -1226997776458787801
+      Mindfields2_17: 2567854690324759667
+      Mindfields2_18: 1871516406587254548
+      Mindfields2_19: -1070133190407563948
+      Mindfields2_2: 241495837654318900
+      Mindfields2_20: -1572584560301797817
+      Mindfields2_21: -690229590500554224
+      Mindfields2_22: -3568875689282749293
+      Mindfields2_23: 2510073449671277186
+      Mindfields2_24: -3115464664081932392
+      Mindfields2_25: 1501183961521651164
+      Mindfields2_26: -8841549437191187418
+      Mindfields2_27: 5727190362909742983
+      Mindfields2_28: 527245877974938413
+      Mindfields2_29: 6662385445143755041
+      Mindfields2_3: -4268890762272359209
+      Mindfields2_30: 3791613440918089078
+      Mindfields2_31: -3925767806200539688
+      Mindfields2_32: -3432649053861340408
+      Mindfields2_33: 2281029347411606218
+      Mindfields2_4: 4081337415611164647
+      Mindfields2_5: -3494103362079259370
+      Mindfields2_6: -2513627414342543688
+      Mindfields2_7: -4767161176701096631
+      Mindfields2_8: -4549403740499067045
+      Mindfields2_9: 3530066943658150349
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
