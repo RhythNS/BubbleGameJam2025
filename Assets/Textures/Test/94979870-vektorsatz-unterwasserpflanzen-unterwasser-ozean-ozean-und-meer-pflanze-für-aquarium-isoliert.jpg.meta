@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 7dfd1eab5a5df8e4180059610323b28a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8290158819420252344
+    second: "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_0"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 867
+        width: 433
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dab73ae8e27694aa8a3ca2ff609b4d
+      internalID: 277654344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_1"
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 867
+        width: 433
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495fd67725fa266499b9c532d68d4a31
+      internalID: 477201782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_2"
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 867
+        width: 433
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4aef4175178ac49ad476191bba5b2b
+      internalID: -1057020616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_3"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 434
+        width: 433
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f035a020c8d8de747b1af61b87109b21
+      internalID: -1847227044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_4"
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 434
+        width: 433
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3ce11b227be024e8bb714821ba1879
+      internalID: 351035375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_5"
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 434
+        width: 433
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a47a101fcfb034583daa6d706cee24
+      internalID: -1555196139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_6"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 433
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e266dda6cef027d42917a13078776d5c
+      internalID: 1160697319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_7"
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1
+        width: 433
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff645d16078a2914989aac7aea57eb77
+      internalID: -702203144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_8"
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1
+        width: 433
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35d8f0823ea0a04fbecfebcadb2057a
+      internalID: 198096132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3fdf01116138e6b4a913e9972d745510
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_0": 277654344
+      "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_1": 477201782
+      "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_2": -1057020616
+      "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_3": -1847227044
+      "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_4": 351035375
+      "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_5": -1555196139
+      "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_6": 1160697319
+      "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_7": -702203144
+      "94979870-vektorsatz-unterwasserpflanzen-unterwasser-ozean-ozean-und-meer-pflanze-f\xFCr-aquarium-isoliert_8": 198096132
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

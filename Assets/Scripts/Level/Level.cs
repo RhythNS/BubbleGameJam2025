@@ -10,7 +10,7 @@ public class Level : MonoBehaviour
     [SerializeField]
     private Vector2 size;
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(transform.position, size);
