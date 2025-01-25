@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    [SerializeField] private Player PlayerMovement;
+    [SerializeField] private PlayerController PlayerMovement;
     public Camera cam;
 
 

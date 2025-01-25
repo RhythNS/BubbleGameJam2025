@@ -410,13 +410,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 794519139800213254, guid: 707d977710e414d4c9c765cedc9e10ae, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 794519139800213254, guid: 707d977710e414d4c9c765cedc9e10ae, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 794519139800213254, guid: 707d977710e414d4c9c765cedc9e10ae, type: 3}
+      propertyPath: m_GravityScale
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 794519139800213254, guid: 707d977710e414d4c9c765cedc9e10ae, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 803801723441509472, guid: 707d977710e414d4c9c765cedc9e10ae, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.37
+      objectReference: {fileID: 0}
     - target: {fileID: 803801723441509472, guid: 707d977710e414d4c9c765cedc9e10ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.34
+      value: 3.21
       objectReference: {fileID: 0}
     - target: {fileID: 803801723441509472, guid: 707d977710e414d4c9c765cedc9e10ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.65
+      value: 7.7
       objectReference: {fileID: 0}
     - target: {fileID: 803801723441509472, guid: 707d977710e414d4c9c765cedc9e10ae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -707,7 +727,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.01
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
@@ -739,19 +759,24 @@ MonoBehaviour:
   minSizeMult: 0.3
   healthGroth: 1.5
   baseHealth: 30
+  minHealthToBlowAir: 10
+  blowAirSpeed: 1
+  boostSpeed: 0.1
   upSpeed: 0.05
   horizontalMaxSpeed: 0.08
   horizontalMinSpeed: 0.01
-  horizontalAcceleration: 0.005
-  horizontalDeceleration: 0.97
+  horizontalAcceleration: 1
+  velocityDecceleration: 1
+  rotationSpeed: 300
   rb: {fileID: 1932673787}
   camMovement: {fileID: 214007788}
   moveLeftKey: 97
   moveRightKey: 100
-  lookRight: 275
-  lookDown: 274
-  lookLeft: 276
-  lookUp: 273
+  lookRightKey: 275
+  lookDownKey: 274
+  lookLeftKey: 276
+  lookUpKey: 273
+  blowAirKey: 32
 --- !u!212 &1932673789
 SpriteRenderer:
   m_ObjectHideFlags: 0

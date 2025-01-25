@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float maxHealth;
     public float maxSizeMult;
@@ -24,11 +24,21 @@ public class Player : MonoBehaviour
     public float healthGroth;
     public float baseHealth;
 
+    public float minHealthToBlowAir;
+    public float blowAirSpeed;
+    public float boostMaxSpeed;
+    public float blowAirDisableTime;
+    private float blowAirDisableTimer;
+    private Vector2 boostVelocity;
+    public float boostAccelertation;
+    public float boostDeccelertation;
+
     public float upSpeed;
     public float horizontalMaxSpeed;
     public float horizontalMinSpeed;
     public float horizontalAcceleration;
     public float horizontalDeceleration;
+    public float rotationSpeed;
     public Rigidbody2D rb;
     [SerializeField] private CameraMovement camMovement;
     
@@ -36,10 +46,12 @@ public class Player : MonoBehaviour
     public KeyCode moveLeftKey = KeyCode.A;
     public KeyCode moveRightKey = KeyCode.D;
 
-    public KeyCode lookRight = KeyCode.RightArrow;
-    public KeyCode lookDown = KeyCode.DownArrow;
-    public KeyCode lookLeft = KeyCode.LeftArrow;
-    public KeyCode lookUp = KeyCode.UpArrow;
+    public KeyCode lookRightKey = KeyCode.RightArrow;
+    public KeyCode lookDownKey = KeyCode.DownArrow;
+    public KeyCode lookLeftKey = KeyCode.LeftArrow;
+    public KeyCode lookUpKey = KeyCode.UpArrow;
+
+    public KeyCode blowAirKey = KeyCode.Space;
 
     private Vector2 currentPos = Vector2.zero;
     private Vector2 moveVec = Vector2.zero;
@@ -63,10 +75,16 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             Health -= 10f;
         }
+
+        if (blowAirDisableTimer > 0)
+        {
+            blowAirDisableTimer -= Time.deltaTime;
+        }
+
         Grow();
         LookDirection();
     }
@@ -74,27 +92,44 @@ public class Player : MonoBehaviour
     private void LookDirection()
     {
         Vector3 nextDirection = Vector3.zero;
-        if (Input.GetKey(lookRight))
+        if (Input.GetKey(lookRightKey))
         {
             nextDirection += Vector3.right;
         }
-        if (Input.GetKey(lookDown))
+        if (Input.GetKey(lookDownKey))
         {
             nextDirection += Vector3.down;
         }
-        if (Input.GetKey(lookLeft))
+        if (Input.GetKey(lookLeftKey))
         {
             nextDirection += Vector3.left;
         }
-        if (Input.GetKey(lookUp))
+        if (Input.GetKey(lookUpKey))
         {
             nextDirection += Vector3.up;
         }
-        if (nextDirection != direction && nextDirection != Vector3.zero)
+        if (nextDirection == Vector3.zero)
         {
-            direction = nextDirection;
+            return;
         }
-        rb.rotation = Vector3.SignedAngle(Vector3.up, direction, Vector3.forward);
+        direction = nextDirection;
+
+        float currentRotation = rb.rotation;
+        float targetRotation = Vector3.SignedAngle(Vector3.up, direction, Vector3.forward);
+        if (targetRotation < 0) { targetRotation = (180 - Mathf.Abs(targetRotation)) + 180; }
+        float rotationDiff = targetRotation - currentRotation;
+        if (Mathf.Abs(rotationDiff) < 3)
+        {
+            return;
+        }
+        int sign = 1;
+        if ((rotationDiff < 0 || rotationDiff > 180) && rotationDiff > -180)
+        {
+            sign = -1;
+        }
+        rb.rotation = currentRotation + sign * rotationSpeed * Time.deltaTime;
+        if (rb.rotation < 0) {  rb.rotation += 360; }
+        else if (rb.rotation > 360) { rb.rotation -= 360;}
     }
 
     private void Grow()
@@ -107,8 +142,10 @@ public class Player : MonoBehaviour
         currentPos = transform.position;
         moveVec = Vector2.zero;
 
+        moveVec += BlowAir();
         moveVec += DefaultMovement();
         moveVec += ControledMovement();
+
 
         rb.MovePosition(currentPos + moveVec);
     }
@@ -159,6 +196,30 @@ public class Player : MonoBehaviour
         }
 
         return Vector2.right * horizontalMove;
+    }
+
+    private Vector2 BlowAir()
+    {
+        if (blowAirDisableTimer > 0 || !Input.GetKey(blowAirKey))
+        {
+            boostVelocity *= boostDeccelertation;
+            return boostVelocity;
+        }
+        if (Health <= minHealthToBlowAir)
+        {
+            blowAirDisableTimer = blowAirDisableTime;
+            return boostVelocity;
+        }
+        Health -= blowAirSpeed;
+
+        Vector2 boostDir = Quaternion.AngleAxis(rb.rotation, Vector3.back) * Vector2.up;
+        boostDir = new Vector2(boostDir.x, -boostDir.y);
+        boostVelocity += boostDir * boostAccelertation;
+        if (boostVelocity.magnitude > boostMaxSpeed)
+        {
+            boostVelocity = boostVelocity.normalized * boostMaxSpeed;
+        }
+        return boostVelocity;
     }
 
     public void Kill()
