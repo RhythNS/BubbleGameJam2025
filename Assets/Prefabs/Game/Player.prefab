@@ -124,7 +124,6 @@ MonoBehaviour:
   horizontalDeceleration: 0.97
   rotationSpeed: 300
   rb: {fileID: 9029055023107935993}
-  camMovement: {fileID: 0}
   moveLeftKey: 97
   moveRightKey: 100
   lookRightKey: 275
@@ -209,9 +208,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timePlayOther: 2
-  animation: {fileID: 0}
-  animation2: {fileID: 0}
-  movement: {fileID: 0}
 --- !u!111 &7193304101404416944
 Animation:
   m_ObjectHideFlags: 0

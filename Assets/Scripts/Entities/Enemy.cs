@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class Enemy : MonoBehaviour
 {
-    private Rigidbody2D rigidbody2D;
+    private Rigidbody2D rb;
 
     [SerializeField] private Vector2 speedRange = new Vector2(0.08f, 0.08f);
     [SerializeField] private Vector2 sizeRange = new Vector2(1.0f, 1.0f);
@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
 
         gameObject.tag = "Enemy";
 
-        rigidbody2D = GetComponent<Rigidbody2D>();
-        rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
+        rb = GetComponent<Rigidbody2D>();
+        rb.bodyType = RigidbodyType2D.Kinematic;
     }
 }
