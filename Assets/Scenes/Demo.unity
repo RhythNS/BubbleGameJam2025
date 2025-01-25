@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerMovement: {fileID: 1932673788}
+  cam: {fileID: 214007786}
   targetOffset: -3
   maxSlowDownPercent: 1
   maxSpeedUpPercent: 0.3
@@ -733,6 +734,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87b6895c9a5c084286f076d8b9b20b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
+  maxSizeMult: 3
+  minSizeMult: 0.3
+  healthGroth: 1.5
+  baseHealth: 30
   upSpeed: 0.05
   horizontalMaxSpeed: 0.08
   horizontalMinSpeed: 0.01
@@ -740,6 +746,12 @@ MonoBehaviour:
   horizontalDeceleration: 0.97
   rb: {fileID: 1932673787}
   camMovement: {fileID: 214007788}
+  moveLeftKey: 97
+  moveRightKey: 100
+  lookRight: 275
+  lookDown: 274
+  lookLeft: 276
+  lookUp: 273
 --- !u!212 &1932673789
 SpriteRenderer:
   m_ObjectHideFlags: 0
