@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
     public enum State { MainMenu, Game, GameOver, Win }
     [SerializeField] private State currentState;
 
+    public LevelLoader LevelLoader => levelLoader;
+    [SerializeField] private LevelLoader levelLoader;
+
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -45,12 +48,16 @@ public class GameManager : MonoBehaviour
     public void SwitchToGame()
     {
         player.Activate();
+        levelLoader.Begin(player.transform);
     }
 
     public void SwitchToGameOver()
     {
         player.Deactivate();
-
-        // 
+        // fade to black
+        levelLoader.DeleteAllLevels();
+        // Move camera to whale
+        // fade to clear
+        // show menu
     }
 }

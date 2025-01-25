@@ -28,8 +28,6 @@ public class LevelLoader : MonoBehaviour
             Debug.LogError("Already anohter level loader");
         }
         Instance = this;
-
-        Begin(toTrack); // TODO: Delete this
     }
 
     public void Begin(Transform player)
@@ -37,6 +35,15 @@ public class LevelLoader : MonoBehaviour
         enabled = true;
         toTrack = player;
         LoadNextLevel();
+    }
+
+    public void DeleteAllLevels()
+    {
+        foreach (Level level in currentLevels)
+        {
+            Destroy(level.gameObject);
+        }
+        currentLevels.Clear();
     }
 
     private void LoadNextLevel()

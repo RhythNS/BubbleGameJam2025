@@ -10,11 +10,11 @@ public class PlayerStarter : MonoBehaviour
 
     private void Start()
     {
-        DoTheThing();
-
         animation1 = GameManager.Instance.Player.GetComponent<Animation>();
         animation2 = Camera.main.GetComponent<Animation>();
         movement = Camera.main.GetComponent<CameraMovement>();
+
+        DoTheThing();
     }
 
     public void DoTheThing()
@@ -24,6 +24,11 @@ public class PlayerStarter : MonoBehaviour
 
     private IEnumerator StartAnimation()
     {
+        PlayerController player = GameManager.Instance.Player;
+        Whale whale = GameManager.Instance.Whale;
+        player.transform.position = whale.StartLocation.position;
+        player.transform.localScale = new Vector3(0.001f, 0.001f, 0.001f);
+
         animation2.Play();
 
         yield return new WaitForSeconds(timePlayOther);
