@@ -74,10 +74,6 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         camMovement = Camera.main.GetComponent<CameraMovement>();
-        baseScale = transform.localScale;
-        Health = baseHealth;
-        //DebugRestart();
-        //Deactivate();
     }
 
     private void FixedUpdate()
@@ -296,6 +292,7 @@ public class PlayerController : MonoBehaviour
 
     public void Kill()
     {
-
+        Debug.Log("Player Died");
+        GameManager.Instance.SwitchToGameOver();
     }
 }
