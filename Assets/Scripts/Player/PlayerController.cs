@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -36,6 +37,11 @@ public class PlayerController : MonoBehaviour
     public float boostAccelertation;
     public float boostDeccelertation;
 
+    public float invurnerableTime = 1f;
+    private float invurnerableTimer = 0f;
+    public float pushBackForce = 10f;
+
+
     public float upSpeed;
     public float horizontalMaxSpeed;
     public float horizontalMinSpeed;
@@ -68,8 +74,10 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         camMovement = Camera.main.GetComponent<CameraMovement>();
-        // DebugRestart();
-        Deactivate();
+        baseScale = transform.localScale;
+        Health = baseHealth;
+        //DebugRestart();
+        //Deactivate();
     }
 
     private void FixedUpdate()
@@ -88,6 +96,10 @@ public class PlayerController : MonoBehaviour
         if (blowAirDisableTimer > 0)
         {
             blowAirDisableTimer -= Time.deltaTime;
+        }
+        if (invurnerableTimer > 0)
+        {
+            invurnerableTimer -= Time.deltaTime;
         }
 
         Grow();
@@ -254,6 +266,32 @@ public class PlayerController : MonoBehaviour
         }
 
         return boostVelocity;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (invurnerableTimer > 0) { return; }
+        if (collision.gameObject.tag != "Enemy") { return; }
+
+        invurnerableTimer = invurnerableTime;
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        Health -= enemy.DamagePhysicsMultiplier;
+        Vector2 forceDir = rb.position - collision.otherRigidbody.position;
+        forceDir = forceDir.normalized;
+        rb.AddForce(forceDir * pushBackForce);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (invurnerableTimer > 0) { return; }
+        if (collision.gameObject.tag != "Enemy") { return; }
+
+        invurnerableTimer = invurnerableTime;
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        Health -= enemy.DamagePhysicsMultiplier;
+        Vector2 forceDir = rb.position - (Vector2)collision.transform.position;
+        forceDir = forceDir.normalized;
+        rb.AddForce(forceDir * pushBackForce);
     }
 
     public void Kill()
