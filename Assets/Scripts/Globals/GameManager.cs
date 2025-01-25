@@ -5,12 +5,19 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
 
     public static GameManager Instance { get { return _instance; } }
-
+    
+    public PlayerController Player => player;
     [SerializeField] private PlayerController player;
+
+    public Whale Whale => whale;
+    [SerializeField] private Whale whale;
 
     [System.Serializable]
     public enum State { MainMenu, Game, GameOver, Win }
     [SerializeField] private State currentState;
+
+    public LevelLoader LevelLoader => levelLoader;
+    [SerializeField] private LevelLoader levelLoader;
 
     private void Awake()
     {
@@ -41,10 +48,16 @@ public class GameManager : MonoBehaviour
     public void SwitchToGame()
     {
         player.Activate();
+        levelLoader.Begin(player.transform);
     }
 
     public void SwitchToGameOver()
     {
         player.Deactivate();
+        // fade to black
+        levelLoader.DeleteAllLevels();
+        // Move camera to whale
+        // fade to clear
+        // show menu
     }
 }

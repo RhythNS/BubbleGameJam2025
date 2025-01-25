@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 19bd36860c6395842afbf13b1db5232f
+guid: 74a7f75604b6b9a42bd24ba89868d1cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8609706356734802580
-    second: Untitled_Artwork-6 (3)_0
-  - first:
-      213: 4902077929490258583
-    second: Untitled_Artwork-6 (3)_1
-  - first:
-      213: -4291525747256375688
-    second: Untitled_Artwork-6 (3)_2
+      213: 8915738790970645733
+    second: white rectangle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +40,9 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -78,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -106,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-6 (3)_0
+      name: white rectangle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 119
-        width: 1920
-        height: 879
+        y: 0
+        width: 124
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 49ab995b052db7770800000000000000
-      internalID: 8609706356734802580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled_Artwork-6 (3)_1
-      rect:
-        serializedVersion: 2
-        x: 917
-        y: 118
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79a9c8097eda70440800000000000000
-      internalID: 4902077929490258583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled_Artwork-6 (3)_2
-      rect:
-        serializedVersion: 2
-        x: 991
-        y: 118
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 876475202107174c0800000000000000
-      internalID: -4291525747256375688
+      spriteID: 5ecd9f951311bbb70800000000000000
+      internalID: 8915738790970645733
       vertices: []
       indices: 
       edges: []
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Untitled_Artwork-6 (3)_0: 8609706356734802580
-      Untitled_Artwork-6 (3)_1: 4902077929490258583
-      Untitled_Artwork-6 (3)_2: -4291525747256375688
+      white rectangle_0: 8915738790970645733
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

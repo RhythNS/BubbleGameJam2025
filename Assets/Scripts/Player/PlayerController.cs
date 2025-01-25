@@ -71,13 +71,6 @@ public class PlayerController : MonoBehaviour
         Deactivate();
     }
 
-    private void DebugRestart()
-    {
-        playerStartPos = transform.position;
-        baseScale = transform.localScale;
-        Health = baseHealth;
-    }
-
     private void FixedUpdate()
     {
         Movement();
@@ -110,6 +103,8 @@ public class PlayerController : MonoBehaviour
     {
         enabled = true;
         rb.simulated = true;
+        baseScale = transform.localScale;
+        Health = baseHealth;
     }
 
     private void LookDirection()
@@ -262,8 +257,6 @@ public class PlayerController : MonoBehaviour
 
     public void Kill()
     {
-        transform.position = playerStartPos;
-        camMovement.transform.position = playerStartPos + Vector3.down * camMovement.targetOffset + camMovement.transform.position.z * Vector3.forward;
-        Health = baseHealth;
+
     }
 }

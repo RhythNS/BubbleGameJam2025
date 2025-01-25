@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 19bd36860c6395842afbf13b1db5232f
+guid: 23021f4c00f08ae4aa05577a94061059
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8609706356734802580
-    second: Untitled_Artwork-6 (3)_0
+      213: 900277155890564559
+    second: StarSheet_0
   - first:
-      213: 4902077929490258583
-    second: Untitled_Artwork-6 (3)_1
+      213: -4824818980443218029
+    second: StarSheet_1
   - first:
-      213: -4291525747256375688
-    second: Untitled_Artwork-6 (3)_2
+      213: -4641642872485312534
+    second: StarSheet_2
+  - first:
+      213: 1111904487436187696
+    second: StarSheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +49,9 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -78,7 +81,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -106,67 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-6 (3)_0
+      name: StarSheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 119
-        width: 1920
-        height: 879
+        y: 350
+        width: 350
+        height: 350
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 49ab995b052db7770800000000000000
-      internalID: 8609706356734802580
+      spriteID: 57dde2720ea397c4db023c1737efde1f
+      internalID: 1415001747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork-6 (3)_1
+      name: StarSheet_1
       rect:
         serializedVersion: 2
-        x: 917
-        y: 118
-        width: 12
-        height: 11
+        x: 350
+        y: 350
+        width: 350
+        height: 350
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 79a9c8097eda70440800000000000000
-      internalID: 4902077929490258583
+      spriteID: 9d82111a2e434ce4aa817735c87e9c2d
+      internalID: 489039569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork-6 (3)_2
+      name: StarSheet_2
       rect:
         serializedVersion: 2
-        x: 991
-        y: 118
-        width: 12
-        height: 11
+        x: 0
+        y: 0
+        width: 350
+        height: 350
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 876475202107174c0800000000000000
-      internalID: -4291525747256375688
+      spriteID: 3c9cf1c5a0336b14fa03bab6718b4a9c
+      internalID: 318590585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarSheet_3
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0918da12cce794ca77d2fcb703ce3e
+      internalID: 782255624
       vertices: []
       indices: 
       edges: []
@@ -175,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a74d5adaf351bbe419d02527b844417d
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Untitled_Artwork-6 (3)_0: 8609706356734802580
-      Untitled_Artwork-6 (3)_1: 4902077929490258583
-      Untitled_Artwork-6 (3)_2: -4291525747256375688
+      StarSheet_0: 1415001747
+      StarSheet_1: 489039569
+      StarSheet_2: 318590585
+      StarSheet_3: 782255624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
