@@ -6,8 +6,8 @@ public class Enemy : MonoBehaviour
 {
     private Rigidbody2D rigidbody2D;
 
-    [SerializeField] private Vector2 speedRange;
-    [SerializeField] private Vector2 sizeRange;
+    [SerializeField] private Vector2 speedRange = new Vector2(0.08f, 0.08f);
+    [SerializeField] private Vector2 sizeRange = new Vector2(1.0f, 1.0f);
 
     public float DamagePhysicsMultiplier => damagePhysicsMultiplier;
     [SerializeField] private float damagePhysicsMultiplier;
@@ -24,6 +24,9 @@ public class Enemy : MonoBehaviour
 
         transform.localScale = new Vector3(size, size, 1);
 
+        gameObject.tag = "Enemy";
+
         rigidbody2D = GetComponent<Rigidbody2D>();
+        rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
     }
 }
