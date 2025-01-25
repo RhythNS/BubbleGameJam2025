@@ -47,6 +47,8 @@ GameObject:
   - component: {fileID: 5153189513978087392}
   - component: {fileID: 6058586491561890420}
   - component: {fileID: 3398139217357164063}
+  - component: {fileID: 5839113992675745836}
+  - component: {fileID: 7475783148255753180}
   m_Layer: 0
   m_Name: StarfishSprite
   m_TagString: Enemy
@@ -257,6 +259,35 @@ MonoBehaviour:
   sizeRange: {x: 0.5403, y: 0.5403}
   damagePhysicsMultiplier: 1
   damageOnHit: 0
+--- !u!114 &5839113992675745836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2869269739705437370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edd3695827b008640b3285abff25354d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 1415001747, guid: 23021f4c00f08ae4aa05577a94061059, type: 3}
+  - {fileID: 489039569, guid: 23021f4c00f08ae4aa05577a94061059, type: 3}
+  - {fileID: 318590585, guid: 23021f4c00f08ae4aa05577a94061059, type: 3}
+  - {fileID: 782255624, guid: 23021f4c00f08ae4aa05577a94061059, type: 3}
+--- !u!114 &7475783148255753180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2869269739705437370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef2107c39c894dbecfb647008d9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4396191290261097469
 GameObject:
   m_ObjectHideFlags: 0
