@@ -424,11 +424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!198 &885856735 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2885362889064120214, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-  m_PrefabInstance: {fileID: 1445470964}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &987436175
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +459,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dfd5cb205c57c404685b985eb60fa259, type: 2}
   levelChangeDistance: 20
   levelDeleteDistance: 10
+  bannerChangeDistance: 20
+  bannerDistanceMultipler: 2
 --- !u!4 &987436177
 Transform:
   m_ObjectHideFlags: 0
@@ -580,6 +577,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 517627110082928419, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8347965919647830542, guid: f07961fd6973e1e42a42d50bb25a1b4d, type: 3}
     - target: {fileID: 1155939405912030382, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.12519364
@@ -693,48 +694,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-      propertyPath: upSpeed
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-      propertyPath: baseHealth
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
       propertyPath: camMovement
       value: 
       objectReference: {fileID: 1877247252}
-    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-      propertyPath: blowParticles
-      value: 
-      objectReference: {fileID: 885856735}
-    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-      propertyPath: boostMaxSpeed
-      value: 0.1
+    - target: {fileID: 8331536159503780695, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
+      propertyPath: m_Radius
+      value: 0.81192887
       objectReference: {fileID: 0}
-    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-      propertyPath: pushBackForce
-      value: 1
+    - target: {fileID: 8331536159503780695, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.009268708
       objectReference: {fileID: 0}
-    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-      propertyPath: airLossPercent
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-      propertyPath: pointsPerSecond
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-      propertyPath: airBubbleMinHealth
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-      propertyPath: horizontalMaxSpeed
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-      propertyPath: horizontalAcceleration
-      value: 0.005
+    - target: {fileID: 8331536159503780695, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.004635306
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

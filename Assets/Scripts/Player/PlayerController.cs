@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public float maxSizeMult;
     public float minSizeMult;
 
+    [SerializeField] private bool isImune = false;
+
     [HideInInspector] public float Health 
     { 
         get { return _health; }
@@ -352,6 +354,8 @@ public class PlayerController : MonoBehaviour
 
     public void Kill()
     {
+        if (isImune) { return; }
+
         Debug.Log("Player Died");
         GameManager.Instance.SwitchToGameOver();
     }

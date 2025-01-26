@@ -58,6 +58,11 @@ public class GameManager : MonoBehaviour
         levelLoader.Begin(player.transform);
     }
 
+    public void FinishGame()
+    {
+        //BIIIG TODO
+    }
+
     public void SwitchToGameOver()
     {
         player.Deactivate();

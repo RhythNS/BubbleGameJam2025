@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 
 public class LevelLoader : MonoBehaviour
@@ -58,7 +57,15 @@ public class LevelLoader : MonoBehaviour
             Destroy(level.gameObject);
         }
         currentLevels.Clear();
+        toLoadLevels.Clear();
         lastBanner = null;
+
+
+        foreach (BackgroundObject backgroundObject in backgroundObjects)
+        {
+            Destroy(backgroundObject.gameObject);
+        }
+        backgroundObjects.Clear();
     }
 
     private void LoadNextLevel()
@@ -75,7 +82,7 @@ public class LevelLoader : MonoBehaviour
         Vector3 pos;
         if (lastLevel != null)
         {
-            pos = lastLevel.transform.position + new Vector3(0, lastLevel.Size.y, 0);
+            pos = lastLevel.transform.position + new Vector3(0, lastLevel.Size.y * 0.5f + levelPrefab.Size.y * 0.5f, 0);
         }
         else
         {
@@ -85,6 +92,7 @@ public class LevelLoader : MonoBehaviour
         Level createdLevel = Instantiate(levelPrefab, pos, Quaternion.identity);
         toLoadLevels.RemoveAt(0);
         currentLevels.Insert(0, createdLevel);
+        CreateDensityBackground();
     }
 
     private void LoadNextBiome()
@@ -114,17 +122,16 @@ public class LevelLoader : MonoBehaviour
             return;
         }
 
+        if (currentLevels.Count == 0)
+        {
+            return;
+        }
         CheckLevels();
         CheckBackgroundObjects();
     }
 
     private void CheckLevels()
     {
-        if (currentLevels.Count == 0)
-        {
-            return;
-        }
-
         Level maxLevel = currentLevels.Count == 0 ? null : currentLevels[0];
         float maxLevelPosY = maxLevel.transform.position.y + maxLevel.Size.y;
         if (maxLevelPosY - toTrack.position.y < levelChangeDistance)
@@ -139,6 +146,66 @@ public class LevelLoader : MonoBehaviour
             currentLevels.RemoveAt(currentLevels.Count - 1);
             Destroy(minLevel.gameObject);
         }
+    }
+
+    private void CreateDensityBackground()
+    {
+        if (biomes[atBiome - 1].Level1Density != 0)
+        {
+            CreateBackgroundObjects(biomes[atBiome - 1].Level1Objects, Vector2.zero, biomes[atBiome - 1].Level1Density, biomes[atBiome - 1].Level1MinDistance, 1);
+        }
+        if (biomes[atBiome - 1].Level2Density != 0)
+        {
+            CreateBackgroundObjects(biomes[atBiome - 1].Level2Objects, Vector2.zero, biomes[atBiome - 1].Level2Density, biomes[atBiome - 1].Level2MinDistance, 2);
+        }
+    }
+
+    private void CreateBackgroundObjects(List<BackgroundObject> objects, Vector2 position, int density, float minDistance, int level)
+    {
+        Vector2[] points = GetRandomPoints(density, minDistance,
+            new Rect((Vector2)currentLevels[0].transform.position - currentLevels[0].Size, currentLevels[0].Size * 2));
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            BackgroundObject backgroundObject = Instantiate(RandomUtil.Element(objects), position + points[i], Quaternion.identity);
+            backgroundObject.Init(this);
+            backgroundObjects.Add(backgroundObject);
+        }
+    }
+
+    public Vector2[] GetRandomPoints(int count, float minDistance, Rect rect)
+    {
+        Vector2[] points = new Vector2[count];
+        int emergencyExit = 0;
+        for (int i = 0; i < count; i++)
+        {
+            Vector2 point = new Vector2(Random.Range(rect.xMin, rect.xMax), Random.Range(rect.yMin, rect.yMax));
+            bool valid = true;
+            foreach (Vector2 p in points)
+            {
+                if (Vector2.Distance(point, p) < minDistance)
+                {
+                    valid = false;
+                    break;
+                }
+            }
+            if (valid)
+            {
+                points[i] = point;
+                emergencyExit = 0;
+            }
+            else
+            {
+                emergencyExit++;
+                if (emergencyExit > 100)
+                {
+                    Debug.LogError("Emergency exit");
+                    break;
+                }
+                i--;
+            }
+        }
+        return points;
     }
 
     private void CheckBackgroundObjects()

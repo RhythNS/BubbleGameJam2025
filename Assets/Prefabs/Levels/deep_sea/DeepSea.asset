@@ -23,7 +23,30 @@ MonoBehaviour:
   - {fileID: 4165765225004053464, guid: 10669a5853b9ba44d8dd50b781a1c39c, type: 3}
   - {fileID: 2943755089179384030, guid: 01382065dfb369b4d9a72bcbba37dd15, type: 3}
   - {fileID: 5679935022369816828, guid: f485fb99b53b7c744918ca0c7b0b9e95, type: 3}
-  backgroundObjects: []
+  level1MinDistance: 3
+  level1Density: 5
+  level1Objects:
+  - {fileID: 5526884417714459701, guid: 94171ce552f0bbf479c595edf9493964, type: 3}
+  - {fileID: 2096455001745331107, guid: 92e8c8ce0fa907846bcc4170df72ac9a, type: 3}
+  - {fileID: 8382901867892302230, guid: c4043e998f8c7a34caa22ba94e4873e8, type: 3}
+  - {fileID: 1600650646489241291, guid: e75479e4fd42481468687b5a99dfddc3, type: 3}
+  - {fileID: 6831178600870906873, guid: afd380928f6712e4fb966b1a025ee635, type: 3}
+  - {fileID: 7082096000634532885, guid: 4c980d2cffd4ee940808d559cb645b43, type: 3}
+  - {fileID: 8519949511886367918, guid: 2c70e1b9928c9ff41be7489cb7ea1f9d, type: 3}
+  - {fileID: 8593178877745589409, guid: cb6a463688c06ae4884ff60e744c07c9, type: 3}
+  - {fileID: 342227882586130784, guid: 217db8949cc9c3f4baeb38bd71df9652, type: 3}
+  level2MinDistance: 2
+  level2Density: 7
+  level2Objects:
+  - {fileID: 9151062819301699796, guid: b1148a03d11c6ec41923c66feb52288b, type: 3}
+  - {fileID: 1704646641618857484, guid: a72b3a569c783ef419e85b720e304c2d, type: 3}
+  - {fileID: 2690796047744489278, guid: 4c0e81b0053a8aa4684f9e40d8c6abd9, type: 3}
+  - {fileID: 5429119816646046029, guid: 5d5d1ca8156bb3542942c55d58d8a081, type: 3}
+  - {fileID: 2290656140894497177, guid: 7d4ed11706bc53a4cb6d2f6a2ea509ff, type: 3}
+  - {fileID: 3998198931896953421, guid: b1e31fabe6b7f704f839b1031ca4b92e, type: 3}
+  - {fileID: 3695601722585837346, guid: bf4b9082e5d77ac47864d4467445ba2f, type: 3}
+  - {fileID: 1602893609283316709, guid: b12bad54b0245a74aac767d8403a892c, type: 3}
+  - {fileID: 6092255062486251974, guid: d1623edcf02003f4e93c4a15a184feb0, type: 3}
   bannerObjects:
   - {fileID: 11400000, guid: 16f7bc81d6494f8418d114b755f0c311, type: 2}
   - {fileID: 11400000, guid: 0b3ddbbc715f3374097e0810cbcbfdb0, type: 2}
