@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 
 public class LevelLoader : MonoBehaviour
@@ -58,7 +57,9 @@ public class LevelLoader : MonoBehaviour
             Destroy(level.gameObject);
         }
         currentLevels.Clear();
+        toLoadLevels.Clear();
         lastBanner = null;
+
 
         foreach (BackgroundObject backgroundObject in backgroundObjects)
         {
@@ -81,7 +82,7 @@ public class LevelLoader : MonoBehaviour
         Vector3 pos;
         if (lastLevel != null)
         {
-            pos = lastLevel.transform.position + new Vector3(0, lastLevel.Size.y, 0);
+            pos = lastLevel.transform.position + new Vector3(0, lastLevel.Size.y * 0.5f + levelPrefab.Size.y * 0.5f, 0);
         }
         else
         {
@@ -209,9 +210,6 @@ public class LevelLoader : MonoBehaviour
 
     private void CheckBackgroundObjects()
     {
-        if (atBiome - 1 < 0)
-            return;
-
         if (biomes[atBiome - 1].BannerObjects.Count != 0)
         {
             TryCreateBanner();

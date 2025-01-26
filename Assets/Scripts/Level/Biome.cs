@@ -9,7 +9,6 @@ public class Biome : ScriptableObject
     private List<Level> levels;
     public List<Level> Levels => levels;
 
-
     public float Level1MinDistance => level1MinDistance;
     [SerializeField] private float level1MinDistance = 2;
     public int Level1Density => level1Density;

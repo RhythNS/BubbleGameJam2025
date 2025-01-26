@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
         get { return _health; }
         set 
         { 
-            if (isImune) { return; }
             if (value < 0) { _health = 0; Kill(); }
             else if (value > maxHealth) { _health = maxHealth; }
             else { _health = value; }
@@ -355,6 +354,8 @@ public class PlayerController : MonoBehaviour
 
     public void Kill()
     {
+        if (isImune) { return; }
+
         Debug.Log("Player Died");
         GameManager.Instance.SwitchToGameOver();
     }
