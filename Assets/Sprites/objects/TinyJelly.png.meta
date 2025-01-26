@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 45278c8995f099b4994f95d17ef01b9d
+guid: bc172bb0aba8f5c4ca7df559fa9d88fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1915976090460366800
-    second: bubble_idle_0
+      213: 372860550492833139
+    second: TinyJelly_0
   - first:
-      213: 5045232149638358433
-    second: bubble_idle_1
+      213: -8056929237062987377
+    second: TinyJelly_1
   - first:
-      213: 3028671561712294074
-    second: bubble_idle_2
+      213: 3104015666843611415
+    second: TinyJelly_2
   - first:
-      213: 3239710184736980369
-    second: bubble_idle_3
+      213: -4529547893186956065
+    second: TinyJelly_3
   - first:
-      213: 7325596894302518933
-    second: bubble_idle_4
+      213: -643437006981867884
+    second: TinyJelly_4
+  - first:
+      213: -4055263947037257138
+    second: TinyJelly_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,30 +111,83 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bubble_idle_0
+      name: TinyJelly_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fea90d89ae574d44a22673f8b9278e8
+      internalID: -562054571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TinyJelly_1
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 700
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222e3d50a31a6da45adecc55656565d2
+      internalID: 36608823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TinyJelly_2
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 700
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900f65c0ba84cac45915f8a36e8293b9
+      internalID: 1598103377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TinyJelly_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 200
-        height: 200
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 061a6fc04c67b79439e5cbe658954fc1
-      internalID: -1453210722
+      spriteID: 9d657008660d1a24b85362c7a4801514
+      internalID: -2099070890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_idle_1
+      name: TinyJelly_4
       rect:
         serializedVersion: 2
-        x: 200
+        x: 700
         y: 0
-        width: 200
-        height: 200
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5b9360c9a8f08a4a846b3a98a763cef
-      internalID: 1892852848
+      spriteID: 260cfd430a7bb4e42b213f297f6d5a2c
+      internalID: 675381335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_idle_2
+      name: TinyJelly_5
       rect:
         serializedVersion: 2
-        x: 400
+        x: 1400
         y: 0
-        width: 200
-        height: 200
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,52 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42525b22fbd900c48bb38a8fa7ee815f
-      internalID: -1141747311
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubble_idle_3
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07e521d536ad3c14cbdde8aa3eb76c87
-      internalID: 170565484
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubble_idle_4
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e5bf529c675458409e075d95a65dd8d
-      internalID: -569069542
+      spriteID: a86092e485a156e489227ff29ca4e7fe
+      internalID: 259738699
       vertices: []
       indices: 
       edges: []
@@ -238,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f0009ef20007b7a4f90e470a64198eed
+    spriteID: a3b548adfead1ac41be1d969ba72ecbd
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bubble_idle_0: -1453210722
-      bubble_idle_1: 1892852848
-      bubble_idle_2: -1141747311
-      bubble_idle_3: 170565484
-      bubble_idle_4: -569069542
+      TinyJelly_0: -562054571
+      TinyJelly_1: 36608823
+      TinyJelly_2: 1598103377
+      TinyJelly_3: -2099070890
+      TinyJelly_4: 675381335
+      TinyJelly_5: 259738699
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
