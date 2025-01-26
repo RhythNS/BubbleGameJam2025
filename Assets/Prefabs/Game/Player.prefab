@@ -105,26 +105,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87b6895c9a5c084286f076d8b9b20b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsPerSecond: 0
+  pointsPerSecond: 1
   maxHealth: 100
   maxSizeMult: 3
   minSizeMult: 0.3
   healthGroth: 1.5
-  baseHealth: 30
+  baseHealth: 0.3
   minHealthToBlowAir: 10
   blowAirSpeed: 0.5
-  boostMaxSpeed: 0.05
+  boostMaxSpeed: 0.1
   blowAirDisableTime: 3
-  airLossPercent: 0
-  airBubbleMinHealth: 0
+  airLossPercent: 0.3
+  airBubbleMinHealth: 10
   boostAccelertation: 0.01
   boostDeccelertation: 0.97
   invurnerableTime: 1
-  pushBackForce: 10
-  upSpeed: 0.05
-  horizontalMaxSpeed: 0.08
+  pushBackForce: 1
+  upSpeed: 0.1
+  horizontalMaxSpeed: 0.05
   horizontalMinSpeed: 0.01
-  horizontalAcceleration: 0.01
+  horizontalAcceleration: 0.005
   horizontalDeceleration: 0.97
   rotationSpeed: 300
   rb: {fileID: 9029055023107935993}
@@ -136,6 +136,7 @@ MonoBehaviour:
   lookUpKey: 273
   blowAirKey: 32
   blowBubble: {fileID: 5663895460944251461, guid: 1aa71f380c2b1cf448e9f69d8a8d14e0, type: 3}
+  blowParticles: {fileID: 2885362889064120214}
 --- !u!50 &9029055023107935993
 Rigidbody2D:
   serializedVersion: 5
@@ -286,6 +287,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1526aa4b426f7214a89eb06bc6f7acfd, type: 3}
+--- !u!198 &2885362889064120214 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7135019376243683736, guid: 1526aa4b426f7214a89eb06bc6f7acfd, type: 3}
+  m_PrefabInstance: {fileID: 5408383431443369486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6853973036116843955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1445730500270609341, guid: 1526aa4b426f7214a89eb06bc6f7acfd, type: 3}
