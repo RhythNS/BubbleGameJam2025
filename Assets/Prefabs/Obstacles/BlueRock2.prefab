@@ -184,6 +184,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9276f8e6bab4d48a06423ef8e74c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemySound:
+    Guid:
+      Data1: 1234266181
+      Data2: 1130333764
+      Data3: 1526668725
+      Data4: -1689669016
+    Path: event:/sfx_die_star
   speedRange: {x: 0.08, y: 0.08}
   sizeRange: {x: 0.14, y: 0.16}
   damageOnCollision: 1
