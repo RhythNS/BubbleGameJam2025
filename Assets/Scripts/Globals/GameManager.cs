@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
     public ButtonCalls ButtonCalls => buttonCalls;
     [SerializeField] private ButtonCalls buttonCalls;
 
+    public GradientBackground GradientBackground => gradientBackground;
+    [SerializeField] private GradientBackground gradientBackground;
+
     private void Awake()
     {
         if (_instance != null && _instance != this)

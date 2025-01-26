@@ -73,6 +73,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 direction = Vector3.up;
 
     [SerializeField] private GameObject blowBubble;
+    [SerializeField] private ParticleSystem blowParticles;
 
     private float _maxHealth;
     private float _healthGroth;
@@ -83,6 +84,8 @@ public class PlayerController : MonoBehaviour
     private float _boostAccelertation;
     private float _boostMaxSpeed;
     private float _rotationSpeed;
+
+    //private bool controle = true;
 
     private void Awake()
     {
@@ -120,6 +123,11 @@ public class PlayerController : MonoBehaviour
         {
             invurnerableTimer -= Time.deltaTime;
         }
+
+        //if (Input.GetKeyUp(blowAirKey))
+        //{
+        //    blowParticles.Stop();
+        //}
 
         Grow();
         LookDirection();
@@ -264,14 +272,18 @@ public class PlayerController : MonoBehaviour
     {
         if (blowAirDisableTimer > 0 || !Input.GetKey(blowAirKey))
         {
+            blowParticles.Stop();
             boostVelocity *= boostDeccelertation;
             return boostVelocity;
         }
         if (Health <= minHealthToBlowAir)
         {
+            blowParticles.Stop();
             blowAirDisableTimer = blowAirDisableTime;
             return boostVelocity;
         }
+
+        if (!blowParticles.isPlaying) { blowParticles.Play(); }
         Health -= blowAirSpeed;
 
         Vector2 boostDir = Quaternion.AngleAxis(rb.rotation, Vector3.back) * Vector2.up;
@@ -328,14 +340,13 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator PushAfterEnemyHit(Vector2 direction)
     {
-        WaitForEndOfFrame wait = new WaitForEndOfFrame();
-        float timer = 0.3f;
+        float timer = 0.1f;
         while (true) 
         {
             rb.AddForce(direction * pushBackForce);
             timer -= Time.deltaTime;
             if (timer < 0) { break; }
-            yield return wait;
+            yield return new WaitForEndOfFrame();
         }
     }
 
