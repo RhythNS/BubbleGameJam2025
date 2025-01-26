@@ -12,9 +12,11 @@ public class GradientBackground : MonoBehaviour
     [SerializeField]
     private int selector;
 
+    private SpriteRenderer spriteRenderer;
+
     private void Awake()
     {
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         material = spriteRenderer.material;
         shader = material.shader;
 
@@ -38,16 +40,21 @@ public class GradientBackground : MonoBehaviour
         gradient = Mathf.Clamp01(gradient);
         
         material.SetFloat(propertyGradientY, gradient);
-        //Debug.Log(gradient);
+
+        Debug.Log(gradient);
+
+        MaterialPropertyBlock block = new MaterialPropertyBlock();
+        block.SetFloat("_GradientY", gradient);
+        spriteRenderer.SetPropertyBlock(block);
     }
 
     public void Credits()
     {
-        material.SetInt(selector, 1);
+        //material.SetInteger
     }
 
     public void Underwater()
     {
-        material.SetInt(selector, 0);
+        //material.SetInt(selector, 0);
     }
 }
