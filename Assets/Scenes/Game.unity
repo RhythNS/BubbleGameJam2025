@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &43831500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 43831501}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &43831501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43831500}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.54, y: -3.11, z: -0.08001213}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &197720044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -175,6 +206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7901237944831495015, guid: 5ce369832b7baec43bc2bfc33479c10a, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 197720046}
     - target: {fileID: 7901237944831495015, guid: 5ce369832b7baec43bc2bfc33479c10a, type: 3}
       propertyPath: isImune
       value: 0
@@ -242,6 +277,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87b6895c9a5c084286f076d8b9b20b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &197720046 stripped
+Animation:
+  m_CorrespondingSourceObject: {fileID: 9036152042596172228, guid: 5ce369832b7baec43bc2bfc33479c10a, type: 3}
+  m_PrefabInstance: {fileID: 197720044}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &296402004 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9174352564561819387, guid: e5a674c969754e2429edd5c1573e2aad, type: 3}
@@ -5723,3 +5763,4 @@ SceneRoots:
   - {fileID: 1015718465}
   - {fileID: 987436177}
   - {fileID: 774099706}
+  - {fileID: 43831501}

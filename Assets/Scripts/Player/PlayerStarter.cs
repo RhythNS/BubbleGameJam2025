@@ -34,12 +34,26 @@ public class PlayerStarter : MonoBehaviour
         yield return new WaitForSeconds(timePlayOther);
         movement.enabled = true;
 
-        animation1.Play();
+        player.anim.enabled = false;
+        player.animator.enabled = true;
 
-        while (animation1.isPlaying)
-        {
-            yield return null;
-        }
+        player.transform.localScale = Vector3.one;
+        player.transform.position = new Vector3(-5.5f, 0.5f, 0);
+        player.transform.rotation = Quaternion.Euler(0,0,186);
+        player.animator.Play("bubble_birth");
+        yield return null;
+        player.animator.Play("bubble_birth");
+        yield return null;
+        player.animator.Play("bubble_birth");
+
+        yield return new WaitForSeconds(player.animator.GetCurrentAnimatorClipInfo(0).Length);
+
+        //animation1.Play();
+
+        //while (animation1.isPlaying)
+        //{
+        //    yield return null;
+        //}
 
         Debug.Log("Done");
         GameManager.Instance.SwitchToGame();

@@ -77,8 +77,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private GameObject blowBubble;
     [SerializeField] private ParticleSystem blowParticles;
-    [SerializeField] private Animation anim;
-    [SerializeField] private Animator animator;
+    [SerializeField] public Animation anim;
+    [SerializeField] public Animator animator;
 
     private float _maxHealth;
     private float _healthGroth;
@@ -152,12 +152,27 @@ public class PlayerController : MonoBehaviour
         rb.simulated = false;
     }
 
+    IEnumerator TriggerIdleAnim()
+    {
+        animator.Play("bubble_idle");
+        yield return null;
+        animator.Play("bubble_idle");
+        yield return null;
+        animator.Play("bubble_idle");
+        yield return null;
+        animator.Play("bubble_idle");
+        yield return null;
+        animator.Play("bubble_idle");
+        yield return null;
+    }
+
     public void Activate()
     {
         
         animator.enabled = true;
         anim.enabled = false;
         transform.localScale = new Vector3(1f, 1f, 1f);
+        StartCoroutine(TriggerIdleAnim());
         enabled = true;
         rb.simulated = true;
         baseScale = transform.localScale;
