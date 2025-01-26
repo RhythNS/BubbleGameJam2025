@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609fa2306375dca4db83ba4e16c518bc, type: 3}
+  m_Name: Banner_TreeBlue
+  m_EditorClassIdentifier: 
+  left: {fileID: 9074409840364834333, guid: 2e4b69b1ddfd3334f8ae4bea2530cbff, type: 3}
+  right: {fileID: 9039612182026109256, guid: 25e933da041152c4390ada1f92a86397, type: 3}

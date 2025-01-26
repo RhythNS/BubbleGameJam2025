@@ -13,13 +13,13 @@
 	</object>
 	<object class="GameParameter" id="{5c07c159-f690-4ebc-bb8b-4f7da3c2d66e}">
 		<property name="maximum">
-			<value>35</value>
+			<value>36</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>
 		</property>
 		<property name="seekSpeed">
-			<value>6</value>
+			<value>10.799999999999999</value>
 		</property>
 		<relationship name="automators">
 			<destination>{62594c0f-f2d0-4ba2-853b-d9a75d859da9}</destination>

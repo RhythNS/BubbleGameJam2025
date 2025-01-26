@@ -76,6 +76,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private GameObject blowBubble;
     [SerializeField] private ParticleSystem blowParticles;
+    [SerializeField] private Animation anim;
+    [SerializeField] private Animator animator;
 
     private float _maxHealth;
     private float _healthGroth;
@@ -137,12 +139,17 @@ public class PlayerController : MonoBehaviour
 
     public void Deactivate()
     {
+        animator.enabled = false;
+        anim.enabled = true;
         enabled = false;
         rb.simulated = false;
     }
 
     public void Activate()
     {
+        
+        animator.enabled = true;
+        anim.enabled = false;
         transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
         enabled = true;
         rb.simulated = true;
@@ -274,18 +281,18 @@ public class PlayerController : MonoBehaviour
     {
         if (blowAirDisableTimer > 0 || !Input.GetKey(blowAirKey))
         {
-            blowParticles.Stop();
+            //blowParticles.Stop();
             boostVelocity *= boostDeccelertation;
             return boostVelocity;
         }
         if (Health <= minHealthToBlowAir)
         {
-            blowParticles.Stop();
+            //blowParticles.Stop();
             blowAirDisableTimer = blowAirDisableTime;
             return boostVelocity;
         }
 
-        if (!blowParticles.isPlaying) { blowParticles.Play(); }
+        //if (!blowParticles.isPlaying) { blowParticles.Play(); }
         Health -= blowAirSpeed;
 
         Vector2 boostDir = Quaternion.AngleAxis(rb.rotation, Vector3.back) * Vector2.up;
@@ -355,8 +362,25 @@ public class PlayerController : MonoBehaviour
     public void Kill()
     {
         if (isImune) { return; }
+        StartCoroutine(PlayDeathAnim());
+    }
 
-        Debug.Log("Player Died");
+    IEnumerator PlayDeathAnim()
+    {
+
+        animator.Play("bubble_death");
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+        SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        spriteRenderer.enabled = false;
+        GameManager.Instance.StartCoroutine(dothething());
         GameManager.Instance.SwitchToGameOver();
+    }
+
+    private IEnumerator dothething()
+    {
+        yield return new WaitForSeconds(5.0f);
+        SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        spriteRenderer.enabled = true;
+        animator.Play("bubble_idle");
     }
 }

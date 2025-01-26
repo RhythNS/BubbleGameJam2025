@@ -26,19 +26,14 @@ MonoBehaviour:
   - {fileID: 4895002210341683839, guid: 5d183e3c8e9f8ba418de0a0ef013989b, type: 3}
   - {fileID: 6299785837506423564, guid: 60d36ab83fca18047a75f128269455a6, type: 3}
   - {fileID: 3256262463155860669, guid: 824072effa8ae704891baa4a414b3c34, type: 3}
-  level1MinDistance: 2
-  level1Density: 10
+  level1MinDistance: 3
+  level1Density: 5
   level1Objects:
-  - {fileID: 8800131849619519888, guid: 82b31dfd34006b2498f0a44ae0d1f353, type: 3}
   - {fileID: 6966497209695504119, guid: 23249345d1ba1a14988ccee83cdb0845, type: 3}
-  - {fileID: 8894350978098234412, guid: f9530b9c6e7d5804cb95f0b2d5a3141c, type: 3}
   - {fileID: 9176175209915581599, guid: bb6b9b382f65df34da13e1f154351eb3, type: 3}
-  - {fileID: 7148637831518848510, guid: 00c2a0ec0b93d5048b92636d2ed28cea, type: 3}
   - {fileID: 8318744854656499889, guid: d30637572a29abd4084a37030641232d, type: 3}
-  - {fileID: 2703858582060666132, guid: d03a0d758271348499d550f33dd64f3c, type: 3}
-  - {fileID: 4537418739797987686, guid: d3b6b6468c8f1a9469e1f3dab3b67e08, type: 3}
   level2MinDistance: 2
-  level2Density: 10
+  level2Density: 7
   level2Objects:
   - {fileID: 1773475990541221844, guid: f4fa53e111fbb8941826d9d57fd82b5e, type: 3}
   - {fileID: 4696099846791449860, guid: 84ba1f41c1852774396df8b56094362c, type: 3}
@@ -48,3 +43,7 @@ MonoBehaviour:
   - {fileID: 8132153757498228411, guid: 9acdbf97290b8314c9b8979fa038559d, type: 3}
   bannerObjects:
   - {fileID: 11400000, guid: e017bc0ddd55ff448aabe54327448b11, type: 2}
+  - {fileID: 11400000, guid: f3dc62a466ba00a45ab9c4cc4c493da9, type: 2}
+  - {fileID: 11400000, guid: 86ad6e5d22436de44a17de20120eb681, type: 2}
+  - {fileID: 11400000, guid: a3e4adee6a99f894897451e272d9800d, type: 2}
+  - {fileID: 11400000, guid: fc705cd0e6c9e0a4f9dc8d2f2a3e9a1e, type: 2}

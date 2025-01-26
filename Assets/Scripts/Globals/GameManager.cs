@@ -25,6 +25,9 @@ public class GameManager : MonoBehaviour
     public GradientBackground GradientBackground => gradientBackground;
     [SerializeField] private GradientBackground gradientBackground;
 
+    public MusicHandler MusicHandler => musicHandler;
+    [SerializeField] private MusicHandler musicHandler;
+
     private void Awake()
     {
         if (_instance != null && _instance != this)
