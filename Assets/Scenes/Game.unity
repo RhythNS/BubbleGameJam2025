@@ -565,7 +565,9 @@ MonoBehaviour:
   toTrack: {fileID: 0}
   biomes:
   - {fileID: 11400000, guid: 668f1995945aee743a3f6d2753a0754b, type: 2}
+  - {fileID: 11400000, guid: 9bef40ca91209cd4a818479e297d4e6f, type: 2}
   - {fileID: 11400000, guid: dfd5cb205c57c404685b985eb60fa259, type: 2}
+  - {fileID: 11400000, guid: 3506a631214e57641b8275668103f045, type: 2}
   - {fileID: 11400000, guid: 4f90f70ecbadd0f49b5a24551606d29a, type: 2}
   levelChangeDistance: 25
   levelDeleteDistance: 50
