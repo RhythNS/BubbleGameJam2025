@@ -387,7 +387,14 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerDeathSound()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(audio_playerDeath);
+        if (audio_playerDeath.Path.Length > 0)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(audio_playerDeath);
+        }
+        else
+        {
+            Debug.Log("Player Death Anim Sound Reference Not Assigned.");
+        }
     }
 
     private IEnumerator dothething()
