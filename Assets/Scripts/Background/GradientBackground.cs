@@ -29,7 +29,6 @@ public class GradientBackground : MonoBehaviour
         Underwater();
     }
 
-
     private void Update()
     {
         float y = transform.position.y;
@@ -50,11 +49,15 @@ public class GradientBackground : MonoBehaviour
 
     public void Credits()
     {
-        material.SetInteger("_IsUnderwater", 0);
+        MaterialPropertyBlock block = new MaterialPropertyBlock();
+        block.SetFloat("_IsUnderwater", 0);
+        spriteRenderer.SetPropertyBlock(block);
     }
 
     public void Underwater()
     {
-        material.SetInteger("_IsUnderwater", 1);
+        MaterialPropertyBlock block = new MaterialPropertyBlock();
+        block.SetFloat("_IsUnderwater", 1);
+        spriteRenderer.SetPropertyBlock(block);
     }
 }
