@@ -20,3 +20,9 @@ MonoBehaviour:
   - {fileID: 8960928606517450702, guid: db54740e7a71d9e488533379434d8855, type: 3}
   - {fileID: 8047216392042506283, guid: f6396653757f8964e9e725003ce2faca, type: 3}
   - {fileID: 899216618166880022, guid: 2dc086c4a63c36a44b5295568561e9f5, type: 3}
+  - {fileID: 1524837513743253962, guid: 45f5f9b7a55774d4cbd8873720bfe970, type: 3}
+  - {fileID: 8221627996405928208, guid: e41c903cea944ea479cd39aced9cd058, type: 3}
+  - {fileID: 4476970407340021905, guid: d0626ee2abaf6b340ace184226781337, type: 3}
+  - {fileID: 4895002210341683839, guid: 5d183e3c8e9f8ba418de0a0ef013989b, type: 3}
+  backgroundObjects: []
+  bannerObjects: []
