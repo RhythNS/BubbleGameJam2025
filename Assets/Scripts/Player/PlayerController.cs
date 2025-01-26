@@ -281,18 +281,18 @@ public class PlayerController : MonoBehaviour
     {
         if (blowAirDisableTimer > 0 || !Input.GetKey(blowAirKey))
         {
-            //blowParticles.Stop();
+            blowParticles.Stop();
             boostVelocity *= boostDeccelertation;
             return boostVelocity;
         }
         if (Health <= minHealthToBlowAir)
         {
-            //blowParticles.Stop();
+            blowParticles.Stop();
             blowAirDisableTimer = blowAirDisableTime;
             return boostVelocity;
         }
 
-        //if (!blowParticles.isPlaying) { blowParticles.Play(); }
+        if (!blowParticles.isPlaying) { blowParticles.Play(); }
         Health -= blowAirSpeed;
 
         Vector2 boostDir = Quaternion.AngleAxis(rb.rotation, Vector3.back) * Vector2.up;
