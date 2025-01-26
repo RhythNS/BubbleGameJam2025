@@ -750,7 +750,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 668f1995945aee743a3f6d2753a0754b, type: 2}
   - {fileID: 11400000, guid: dfd5cb205c57c404685b985eb60fa259, type: 2}
   levelChangeDistance: 25
-  levelDeleteDistance: 1000
+  levelDeleteDistance: 50
   bannerChangeDistance: 20
   bannerDistanceMultipler: 2
   gradientStepper: 0.25

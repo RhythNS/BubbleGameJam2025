@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class LevelLoader : MonoBehaviour
 {
@@ -54,7 +55,13 @@ public class LevelLoader : MonoBehaviour
             return 0;
         }
 
-        return (gradientStepper * (atBiome - 1) + (toTrack.position.y - gradThingMin) / (gradThingMax - gradThingMin));
+        float maxHeight = biomes.Sum(x => x.GetHeight());
+        float minHeight = -5;
+        //float min = Mathf.Max(gradThingMin, toTrack.position.y);
+        //float thing = (gradientStepper * (atBiome - 1) + (gradientStepper * (toTrack.position.y - min) / (gradThingMax - min)));
+        float gradient = (toTrack.position.y - minHeight) / (maxHeight - minHeight);
+        //Debug.Log("gradient: " + gradient);
+        return gradient;
     }
 
     public void Begin(Transform player)

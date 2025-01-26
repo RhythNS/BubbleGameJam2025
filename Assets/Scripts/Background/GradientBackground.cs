@@ -18,10 +18,11 @@ public class GradientBackground : MonoBehaviour
         material = spriteRenderer.material;
         shader = material.shader;
 
-        propertyY = shader.FindPropertyIndex("Y");
-        propertyGradientY = shader.FindPropertyIndex("GradientY");
+        propertyY = shader.FindPropertyIndex("_Y");
+        Debug.Log("Propperty count: " + shader.GetPropertyCount());
+        propertyGradientY = shader.FindPropertyIndex("_GradientY");
 
-        selector = shader.FindPropertyIndex("IsUnderwater");
+        selector = shader.FindPropertyIndex("_IsUnderwater");
 
         Underwater();
     }
@@ -34,8 +35,10 @@ public class GradientBackground : MonoBehaviour
         material.SetFloat(propertyY, y);
 
         float gradient = LevelLoader.Instance.GetThingForGradient();
+        gradient = Mathf.Clamp01(gradient);
+        
         material.SetFloat(propertyGradientY, gradient);
-
+        //Debug.Log(gradient);
     }
 
     public void Credits()
