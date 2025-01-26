@@ -11,13 +11,12 @@ public class PlayerController : MonoBehaviour
     public float maxSizeMult;
     public float minSizeMult;
 
-    [SerializeField] private bool isImune = false;
-
-    [HideInInspector] public float Health 
-    { 
+    [HideInInspector]
+    public float Health
+    {
         get { return _health; }
-        set 
-        { 
+        set
+        {
             if (value < 0) { _health = 0; Kill(); }
             else if (value > maxHealth) { _health = maxHealth; }
             else { _health = value; }
@@ -56,7 +55,7 @@ public class PlayerController : MonoBehaviour
     public float rotationSpeed;
     public Rigidbody2D rb;
     private CameraMovement camMovement;
-    
+
 
     public KeyCode moveLeftKey = KeyCode.A;
     public KeyCode moveRightKey = KeyCode.D;
@@ -96,6 +95,7 @@ public class PlayerController : MonoBehaviour
 
     //private bool controle = true;
 
+    private bool playedDeath = false;
     private Enemy enemyS;
 
     private void Awake()
@@ -168,7 +168,7 @@ public class PlayerController : MonoBehaviour
 
     public void Activate()
     {
-        
+
         animator.enabled = true;
         anim.enabled = false;
         transform.localScale = new Vector3(1f, 1f, 1f);
@@ -188,6 +188,8 @@ public class PlayerController : MonoBehaviour
         boostMaxSpeed = _boostMaxSpeed * GameManager.Instance.ButtonCalls.boostMults[GameManager.Instance.ButtonCalls.boostLevel];
 
         Health = baseHealth * maxHealth;
+        playedDeath = false;
+        enemyS = null;
     }
 
     private void LookDirection()
@@ -229,8 +231,8 @@ public class PlayerController : MonoBehaviour
             sign = -1;
         }
         rb.rotation = currentRotation + sign * rotationSpeed * Time.deltaTime;
-        if (rb.rotation < 0) {  rb.rotation += 360; }
-        else if (rb.rotation > 360) { rb.rotation -= 360;}
+        if (rb.rotation < 0) { rb.rotation += 360; }
+        else if (rb.rotation > 360) { rb.rotation -= 360; }
     }
 
     private void Grow()
@@ -256,8 +258,8 @@ public class PlayerController : MonoBehaviour
         Bounds bounds = camMovement.OrthographicBounds();
         Vector2 horizontalCorrection = Vector2.zero;
         if (transform.position.x > camMovement.transform.position.x + bounds.extents.x)
-        { 
-            horizontalCorrection = new Vector2(camMovement.transform.position.x + bounds.extents.x, transform.position.y) - rb.position; 
+        {
+            horizontalCorrection = new Vector2(camMovement.transform.position.x + bounds.extents.x, transform.position.y) - rb.position;
         }
         else if (transform.position.x < camMovement.transform.position.x - bounds.extents.x)
         {
@@ -266,7 +268,7 @@ public class PlayerController : MonoBehaviour
 
         if (transform.position.y < camMovement.transform.position.y - bounds.extents.y) { Kill(); }
 
-        
+
         return Vector2.up * upSpeed + horizontalCorrection;
 
     }
@@ -274,21 +276,21 @@ public class PlayerController : MonoBehaviour
     private Vector2 ControledMovement()
     {
         int horizontalDirection = 0;
-    
-        if (Input.GetKey(moveRightKey)) 
-        { 
-            horizontalDirection += 1; 
-      
+
+        if (Input.GetKey(moveRightKey))
+        {
+            horizontalDirection += 1;
+
         }
-        if (Input.GetKey(moveLeftKey)) 
-        { 
-            horizontalDirection -= 1; 
+        if (Input.GetKey(moveLeftKey))
+        {
+            horizontalDirection -= 1;
         }
 
-        if (horizontalDirection == 0) 
+        if (horizontalDirection == 0)
         {
             horizontalMove *= horizontalDeceleration;
-            if (Mathf.Abs(horizontalMove) < horizontalMinSpeed) { horizontalMove = 0; } 
+            if (Mathf.Abs(horizontalMove) < horizontalMinSpeed) { horizontalMove = 0; }
         }
         else
         {
@@ -368,13 +370,13 @@ public class PlayerController : MonoBehaviour
         Health -= enemy.DamageOnCollision;
         Vector2 forceDir = transform.position - collision.transform.position;
         forceDir = forceDir.normalized;
-        StartCoroutine(PushAfterEnemyHit(forceDir)); 
+        StartCoroutine(PushAfterEnemyHit(forceDir));
     }
 
     IEnumerator PushAfterEnemyHit(Vector2 direction)
     {
         float timer = 0.1f;
-        while (true) 
+        while (true)
         {
             rb.AddForce(direction * pushBackForce);
             timer -= Time.deltaTime;
@@ -385,7 +387,13 @@ public class PlayerController : MonoBehaviour
 
     public void Kill()
     {
-        if (isImune) { return; }
+        if (playedDeath)
+        {
+            return;
+        }
+
+        playedDeath = true;
+
         StartCoroutine(PlayDeathAnim());
     }
 
@@ -397,7 +405,10 @@ public class PlayerController : MonoBehaviour
         SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.enabled = false;
         GameManager.Instance.StartCoroutine(dothething());
-        enemyS.PlayEnemySound();
+        if (enemyS != null)
+        {
+            enemyS.PlayEnemySound();
+        }
         PlayerDeathSound();
         GameManager.Instance.SwitchToGameOver();
     }

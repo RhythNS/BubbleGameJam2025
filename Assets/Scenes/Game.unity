@@ -119,37 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &43831500
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 43831501}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &43831501
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43831500}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.54, y: -3.11, z: -0.08001213}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &197720044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -218,6 +187,10 @@ PrefabInstance:
       propertyPath: blowParticles
       value: 
       objectReference: {fileID: 1596164440}
+    - target: {fileID: 7901237944831495015, guid: 5ce369832b7baec43bc2bfc33479c10a, type: 3}
+      propertyPath: pointsPerSecond
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7901237944831495015, guid: 5ce369832b7baec43bc2bfc33479c10a, type: 3}
       propertyPath: audio_collision.Path
       value: event:/sfx_collison
@@ -375,7 +348,7 @@ MonoBehaviour:
   levelLoader: {fileID: 987436176}
   buttonCalls: {fileID: 296402004}
   gradientBackground: {fileID: 383918214}
-  musicHandler: {fileID: 0}
+  musicHandler: {fileID: 1734598785}
 --- !u!4 &503413954
 Transform:
   m_ObjectHideFlags: 0
@@ -390,6 +363,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2038864058}
+  - {fileID: 1734598784}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &586938088 stripped
@@ -5534,7 +5508,176 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 667993276}
-  m_LocalEulerAnglesHint: {x: 270, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1734598783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1734598784}
+  - component: {fileID: 1734598785}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1734598784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734598783}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 503413954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1734598785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734598783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d437173cfd07d1c489abe650f2c7d23b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicEvent:
+    Guid:
+      Data1: -1299219594
+      Data2: 1335358807
+      Data3: 1882665141
+      Data4: 326845057
+    Path: event:/music
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 87.5
+      outSlope: 87.5
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.08
+      value: 8
+      inSlope: -1.041256
+      outSlope: -1.041256
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.18
+      value: 8
+      inSlope: -0.3118319
+      outSlope: -0.3118319
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.35
+      value: 14
+      inSlope: 50.980392
+      outSlope: 50.980392
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.44
+      value: 20
+      inSlope: -0.17775096
+      outSlope: -0.17775096
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.61
+      value: 20
+      inSlope: -0.13263348
+      outSlope: -0.13263348
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.7
+      value: 25
+      inSlope: 59.027794
+      outSlope: 59.027794
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.78
+      value: 30
+      inSlope: -0.08054541
+      outSlope: -0.08054541
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.98
+      value: 30
+      inSlope: 0.011739477
+      outSlope: 0.011739477
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 1
+      value: 35
+      inSlope: 328.35977
+      outSlope: 328.35977
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.0061396
+      value: 37.49711
+      inSlope: 406.7193
+      outSlope: 406.7193
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  toPlayEvents:
+  - Guid:
+      Data1: 1069484902
+      Data2: 1084401722
+      Data3: -102368326
+      Data4: -1967466577
+    Path: event:/water_seagulls
+  - Guid:
+      Data1: 279639699
+      Data2: 1308682920
+      Data3: 570245529
+      Data4: 1022839422
+    Path: event:/water_loop
 --- !u!1001 &1877247251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5763,4 +5906,3 @@ SceneRoots:
   - {fileID: 1015718465}
   - {fileID: 987436177}
   - {fileID: 774099706}
-  - {fileID: 43831501}

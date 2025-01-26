@@ -51,6 +51,8 @@ public class GameManager : MonoBehaviour
 
     public void RequestStart()
     {
+        MusicHandler.DoStart();
+
         // check for correct state
         player.GetComponent<PlayerStarter>().DoTheThing();
     }
@@ -69,6 +71,7 @@ public class GameManager : MonoBehaviour
     public void SwitchToGameOver()
     {
         // maybe death sounds or something
+        MusicHandler.DoStop();
         SwitchToGameOver1();
     }
 

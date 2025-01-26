@@ -27,7 +27,7 @@ public class FadeUI : MonoBehaviour
 
     public void FadeToClear(Action callback)
     {
-        StartCoroutine(FadeToClearCoroutine(4.0f, callback));
+        StartCoroutine(FadeToClearCoroutine(1.0f, callback));
     }
 
     private IEnumerator FadeToBlackCoroutine(float seconds, Action callback)

@@ -6,6 +6,8 @@ public class CreditsTrigger : MonoBehaviour
     {
         LevelLoader.Instance.DeleteAllBackgrounds();
         //GameManager.Instance.GradientBackground.Credits();
+        GameManager.Instance.MusicHandler.DoStop();
+        GameManager.Instance.MusicHandler.TriggerEndThings();
     }
 
 }
