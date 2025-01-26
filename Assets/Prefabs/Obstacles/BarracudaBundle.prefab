@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 7190179114152478132}
   - component: {fileID: 1188229031641735086}
   - component: {fileID: 1733854408058590645}
+  - component: {fileID: 5841544579416529244}
   m_Layer: 0
   m_Name: Barracuda
   m_TagString: Enemy
@@ -261,3 +262,51 @@ MonoBehaviour:
   - {fileID: 3335640534273143677, guid: 6b20d4ace3f92e248b3c60c65e5139e2, type: 3}
   - {fileID: 819415895, guid: 6b20d4ace3f92e248b3c60c65e5139e2, type: 3}
   - {fileID: 5177086603177484880, guid: 6b20d4ace3f92e248b3c60c65e5139e2, type: 3}
+--- !u!68 &5841544579416529244
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923735958647658198}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.54, y: 0}
+  - {x: 0.10111749, y: 0.57642436}
+  - {x: 1.5960597, y: 0.69873583}
+  - {x: 1.3774053, y: -0.6510048}
+  - {x: -0.15604186, y: -0.61005116}
+  - {x: -1.4401553, y: -0.37565374}
+  - {x: -1.5592248, y: 0.005895257}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

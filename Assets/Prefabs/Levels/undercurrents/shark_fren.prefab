@@ -52,7 +52,7 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  size: {x: 24.01, y: 16.59}
+  size: {x: 24.01, y: 28}
 --- !u!1001 &577452450124033703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67,11 +67,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4580820120642997650, guid: 237a668ac9e1f914794584db8b1cd44d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.15445
+      value: -12.9
       objectReference: {fileID: 0}
     - target: {fileID: 4580820120642997650, guid: 237a668ac9e1f914794584db8b1cd44d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.006216
+      value: 7.6
       objectReference: {fileID: 0}
     - target: {fileID: 4580820120642997650, guid: 237a668ac9e1f914794584db8b1cd44d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -125,11 +125,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3525589463380798352, guid: 2374e9ce8f3fa104286bfad0ee605850, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.46100885
+      value: 3.7154586
       objectReference: {fileID: 0}
     - target: {fileID: 3525589463380798352, guid: 2374e9ce8f3fa104286bfad0ee605850, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.748883
+      value: 0.8449011
       objectReference: {fileID: 0}
     - target: {fileID: 3525589463380798352, guid: 2374e9ce8f3fa104286bfad0ee605850, type: 3}
       propertyPath: m_LocalPosition.z
