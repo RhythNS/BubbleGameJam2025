@@ -130,6 +130,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b25d579dfaabe84cad84fdd0adf2da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &383918214 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3772033842136970599, guid: 37f05a2230016af448b649d8a6fab140, type: 3}
+  m_PrefabInstance: {fileID: 1877247251}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59995fe71ddc0b43a7eb4f23f4e4ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &503413952
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +175,7 @@ MonoBehaviour:
   currentState: 0
   levelLoader: {fileID: 987436176}
   buttonCalls: {fileID: 296402004}
-  gradientBackground: {fileID: 0}
+  gradientBackground: {fileID: 383918214}
 --- !u!4 &503413954
 Transform:
   m_ObjectHideFlags: 0
@@ -341,6 +352,7 @@ MonoBehaviour:
   levelDeleteDistance: 10
   bannerChangeDistance: 20
   bannerDistanceMultipler: 2
+  gradientStepper: 0.25
 --- !u!4 &987436177
 Transform:
   m_ObjectHideFlags: 0

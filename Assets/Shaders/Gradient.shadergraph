@@ -29,6 +29,9 @@
         },
         {
             "m_Id": "8c4726d605964aad927c2b319ba3d35f"
+        },
+        {
+            "m_Id": "f677de26e37f4ac285f33cc5f822743c"
         }
     ],
     "m_Keywords": [],
@@ -1316,7 +1319,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": -0.10999999940395355,
+    "m_Value": 0.8299999833106995,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -2042,6 +2045,9 @@
         },
         {
             "m_Id": "8c4726d605964aad927c2b319ba3d35f"
+        },
+        {
+            "m_Id": "f677de26e37f4ac285f33cc5f822743c"
         }
     ]
 }
@@ -2196,15 +2202,33 @@
     "m_Value": 0.0,
     "m_SerializableColorKeys": [
         {
-            "x": 0.22632332146167756,
-            "y": 0.0,
-            "z": 0.24528300762176515,
+            "x": 0.017641952261328698,
+            "y": 0.0284260381013155,
+            "z": 0.1119324341416359,
             "w": 0.0
         },
         {
-            "x": 0.0,
-            "y": 0.5630252361297607,
-            "z": 1.0,
+            "x": 0.12743772566318513,
+            "y": 0.0802198275923729,
+            "z": 0.2874408960342407,
+            "w": 0.2500038146972656
+        },
+        {
+            "x": 0.49102088809013369,
+            "y": 0.3005438446998596,
+            "z": 0.7011021375656128,
+            "w": 0.5000076293945313
+        },
+        {
+            "x": 0.7912981510162354,
+            "y": 0.2746773660182953,
+            "z": 0.7605247497558594,
+            "w": 0.7499961853027344
+        },
+        {
+            "x": 1.0,
+            "y": 0.8069524765014648,
+            "z": 0.7083760499954224,
             "w": 1.0
         }
     ],
@@ -2218,7 +2242,7 @@
             "y": 1.0
         }
     ],
-    "m_SerializableMode": 0
+    "m_SerializableMode": 2
 }
 
 {
@@ -6051,6 +6075,34 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "f677de26e37f4ac285f33cc5f822743c",
+    "m_Guid": {
+        "m_GuidSerialized": "ed08f776-de27-48ff-887f-135bdd4c575b"
+    },
+    "m_Name": "underwaterSelector",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "underwaterSelector",
+    "m_DefaultReferenceName": "_underwaterSelector",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.019999999552965165,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
     }
 }
 

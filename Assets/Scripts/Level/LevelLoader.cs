@@ -42,6 +42,21 @@ public class LevelLoader : MonoBehaviour
 
     public float RemainingHeight => toLoadLevels.Sum(level => level.Size.y);
 
+
+    private float gradThingMin = 0;
+    private float gradThingMax = 0;
+    [SerializeField] private float gradientStepper = 0.25f;
+
+    public float GetThingForGradient()
+    {
+        if (enabled == false || atBiome == 0)
+        {
+            return 0;
+        }
+
+        return (gradientStepper * (atBiome - 1) + (toTrack.position.y - gradThingMin) / (gradThingMax - gradThingMin));
+    }
+
     public void Begin(Transform player)
     {
         enabled = true;
@@ -88,6 +103,9 @@ public class LevelLoader : MonoBehaviour
         {
             pos = toTrack.position + new Vector3(0.0f, 20.0f, 0.0f);
         }
+
+        gradThingMin = pos.y;
+        gradThingMax = pos.y + biomes[atBiome - 1].GetHeight();
 
         Level createdLevel = Instantiate(levelPrefab, pos, Quaternion.identity);
         toLoadLevels.RemoveAt(0);
@@ -150,11 +168,11 @@ public class LevelLoader : MonoBehaviour
 
     private void CreateDensityBackground()
     {
-        if (biomes[atBiome - 1].Level1Density != 0)
+        if (biomes[atBiome - 1].Level1Objects.Count > 0 && biomes[atBiome - 1].Level1Density != 0)
         {
             CreateBackgroundObjects(biomes[atBiome - 1].Level1Objects, Vector2.zero, biomes[atBiome - 1].Level1Density, biomes[atBiome - 1].Level1MinDistance, 1);
         }
-        if (biomes[atBiome - 1].Level2Density != 0)
+        if (biomes[atBiome - 1].Level2Objects.Count > 0 && biomes[atBiome - 1].Level2Density != 0)
         {
             CreateBackgroundObjects(biomes[atBiome - 1].Level2Objects, Vector2.zero, biomes[atBiome - 1].Level2Density, biomes[atBiome - 1].Level2MinDistance, 2);
         }

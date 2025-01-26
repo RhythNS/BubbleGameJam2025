@@ -60,17 +60,25 @@ public class GameManager : MonoBehaviour
 
     public void FinishGame()
     {
-        //BIIIG TODO
+        SwitchToGameOver1();
     }
 
     public void SwitchToGameOver()
     {
+        // maybe death sounds or something
+        SwitchToGameOver1();
+    }
+
+    public void SwitchToGameOver1()
+    {
+        // NO DEATH THINGS HERE
         player.Deactivate();
         FadeUI.Instance.FadeToBlack(SwitchToGameOver2);
     }
 
     private void SwitchToGameOver2()
     {
+        gradientBackground.Underwater();
         levelLoader.DeleteAllLevels();
         // Move camera to whale
         player.transform.position = whale.StartLocation.position;
