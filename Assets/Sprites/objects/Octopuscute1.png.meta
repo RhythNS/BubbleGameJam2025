@@ -147,6 +147,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +598,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Octopuscute1_0: 1756478862164632605
+      Octopuscute1_1: 1914669956804636888
+      Octopuscute1_10: -3889065929729684525
+      Octopuscute1_11: -6152385093256396455
+      Octopuscute1_12: 1545268677233714773
+      Octopuscute1_13: 1762903085099700718
+      Octopuscute1_14: -3087797076477123252
+      Octopuscute1_15: -8660685132572211546
+      Octopuscute1_16: -7532582759939666487
+      Octopuscute1_17: -6177440508069807546
+      Octopuscute1_2: -4451161080875561266
+      Octopuscute1_3: -2312145277684828753
+      Octopuscute1_4: 4764510877449779628
+      Octopuscute1_5: 6693140802236951665
+      Octopuscute1_6: 1755808253052452727
+      Octopuscute1_7: -4412357567438688451
+      Octopuscute1_8: -3171977867274930285
+      Octopuscute1_9: -606102318496911435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
