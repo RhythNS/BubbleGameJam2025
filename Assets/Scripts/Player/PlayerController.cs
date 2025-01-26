@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -89,7 +90,12 @@ public class PlayerController : MonoBehaviour
     private float _boostMaxSpeed;
     private float _rotationSpeed;
 
+    [Header("Sound References")]
+    [SerializeField] EventReference audio_playerDeath;
+
     //private bool controle = true;
+
+    private Enemy enemyS;
 
     private void Awake()
     {
@@ -325,6 +331,7 @@ public class PlayerController : MonoBehaviour
         if (invurnerableTimer > 0) { return; }
         if (collision.gameObject.tag != "Enemy") { return; }
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        enemyS = enemy; //reference to the enemy that the player hits
         if (enemy == null || enemy.DamageOnCollision == 0) { return; }
         Health -= enemy.DamageOnCollision;
         invurnerableTimer = invurnerableTime;
@@ -373,7 +380,14 @@ public class PlayerController : MonoBehaviour
         SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.enabled = false;
         GameManager.Instance.StartCoroutine(dothething());
+        enemyS.PlayEnemySound();
+        PlayerDeathSound();
         GameManager.Instance.SwitchToGameOver();
+    }
+
+    private void PlayerDeathSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(audio_playerDeath);
     }
 
     private IEnumerator dothething()

@@ -221,6 +221,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9276f8e6bab4d48a06423ef8e74c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemySound:
+    Guid:
+      Data1: -1365059611
+      Data2: 1081873273
+      Data3: 1772418695
+      Data4: 2069617242
+    Path: event:/sfx_die_fish
   speedRange: {x: 0.08, y: 0.08}
   sizeRange: {x: 0.12, y: 0.14}
   damageOnCollision: 1
