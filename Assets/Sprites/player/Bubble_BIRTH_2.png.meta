@@ -1,0 +1,414 @@
+fileFormatVersion: 2
+guid: 0d6632300ab32a749ae33e9ea034fc1b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4422098912884900210
+    second: Bubble_BIRTH_2_0
+  - first:
+      213: 687250131759301856
+    second: Bubble_BIRTH_2_1
+  - first:
+      213: 2026781347883535806
+    second: Bubble_BIRTH_2_2
+  - first:
+      213: -7603391233550066049
+    second: Bubble_BIRTH_2_3
+  - first:
+      213: 8557837005509808731
+    second: Bubble_BIRTH_2_4
+  - first:
+      213: -2915703926087405511
+    second: Bubble_BIRTH_2_5
+  - first:
+      213: 6810374392057291984
+    second: Bubble_BIRTH_2_6
+  - first:
+      213: 1680030628206476327
+    second: Bubble_BIRTH_2_7
+  - first:
+      213: 3677907627593818576
+    second: Bubble_BIRTH_2_8
+  - first:
+      213: -3135546508704354361
+    second: Bubble_BIRTH_2_9
+  - first:
+      213: 3776040426432688683
+    second: Bubble_BIRTH_2_10
+  - first:
+      213: -6629871804724547206
+    second: Bubble_BIRTH_2_11
+  - first:
+      213: 2532058337311433134
+    second: Bubble_BIRTH_2_12
+  - first:
+      213: -2686627470838962313
+    second: Bubble_BIRTH_2_13
+  - first:
+      213: 583154255984885814
+    second: Bubble_BIRTH_2_14
+  - first:
+      213: 5178816479140252535
+    second: Bubble_BIRTH_2_15
+  - first:
+      213: 2884957147575001757
+    second: Bubble_BIRTH_2_16
+  - first:
+      213: 2940563970295385081
+    second: Bubble_BIRTH_2_17
+  - first:
+      213: -188767845884996570
+    second: Bubble_BIRTH_2_18
+  - first:
+      213: -2256986352454415341
+    second: Bubble_BIRTH_2_19
+  - first:
+      213: 4695632520148944847
+    second: Bubble_BIRTH_2_20
+  - first:
+      213: 7427986364746346494
+    second: Bubble_BIRTH_2_21
+  - first:
+      213: -1851074613983062582
+    second: Bubble_BIRTH_2_22
+  - first:
+      213: 9159611058022181771
+    second: Bubble_BIRTH_2_23
+  - first:
+      213: -1270842753525294000
+    second: Bubble_BIRTH_2_24
+  - first:
+      213: 4300971382607820624
+    second: Bubble_BIRTH_2_25
+  - first:
+      213: -5877097638253766424
+    second: Bubble_BIRTH_2_26
+  - first:
+      213: -5490027625177841621
+    second: Bubble_BIRTH_2_27
+  - first:
+      213: 2809675954194959460
+    second: Bubble_BIRTH_2_28
+  - first:
+      213: -6467720718001152662
+    second: Bubble_BIRTH_2_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bubble_BIRTH_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1940
+        width: 450
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbdf9a1578a75a4ba31d3d6bf25b908
+      internalID: 794241830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_BIRTH_2_1
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1940
+        width: 450
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7495f8123a6cfcb41ae088f94bdf5a00
+      internalID: 1829748625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_BIRTH_2_2
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1940
+        width: 450
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035043d766eb8cf41887b745b49f4137
+      internalID: -18752296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_BIRTH_2_3
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1940
+        width: 450
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fd2fda8bb69594782192c0e3f19675
+      internalID: 1145703339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_BIRTH_2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 970
+        width: 450
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b414f7397eb341047878da8ad7d38977
+      internalID: 1338353982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_BIRTH_2_5
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 970
+        width: 450
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d085c465eac19249904109fe3a89246
+      internalID: -1459194445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_BIRTH_2_6
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 970
+        width: 450
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4295338cf77df4aa5a0413bd5a91eb
+      internalID: -672513264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_BIRTH_2_7
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 970
+        width: 450
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685096e0e34156b4f874ecd2ec199ceb
+      internalID: 2126306045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_BIRTH_2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 450
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb54495f717f620428cba54de5ba6073
+      internalID: 1381698972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: eb63abde380834d44a8d719840a16fef
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bubble_BIRTH_2_0: 794241830
+      Bubble_BIRTH_2_1: 1829748625
+      Bubble_BIRTH_2_2: -18752296
+      Bubble_BIRTH_2_3: 1145703339
+      Bubble_BIRTH_2_4: 1338353982
+      Bubble_BIRTH_2_5: -1459194445
+      Bubble_BIRTH_2_6: -672513264
+      Bubble_BIRTH_2_7: 2126306045
+      Bubble_BIRTH_2_8: 1381698972
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
