@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{28c8f92b-2587-4c9d-be46-355b7d96922a}">
+		<property name="assetPath">
+			<value>LastBreath_SFX4_BubbleStream.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>7.3846249999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5f7fdbcb-82d6-4019-aa04-5e149b8e7951}</destination>
+		</relationship>
+	</object>
+</objects>

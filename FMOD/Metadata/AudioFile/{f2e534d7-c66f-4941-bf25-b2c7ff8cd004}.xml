@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f2e534d7-c66f-4941-bf25-b2c7ff8cd004}">
+		<property name="assetPath">
+			<value>LastBreath_SFX10_BubblePop_sporn.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.7142916666666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5f7fdbcb-82d6-4019-aa04-5e149b8e7951}</destination>
+		</relationship>
+	</object>
+</objects>

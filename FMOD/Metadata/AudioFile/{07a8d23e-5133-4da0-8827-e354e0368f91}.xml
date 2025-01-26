@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{07a8d23e-5133-4da0-8827-e354e0368f91}">
+		<property name="assetPath">
+			<value>LastBubble_Part2_Egit.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>46.079999999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5f7fdbcb-82d6-4019-aa04-5e149b8e7951}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{60cd97a8-e644-4722-9c22-d052ebc1c718}">
+		<property name="assetPath">
+			<value>LastBubble_Part3_Dukduk.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>15.359999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5f7fdbcb-82d6-4019-aa04-5e149b8e7951}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b096717c-321c-4f65-a311-0f4edb6fcfb5}">
+		<property name="assetPath">
+			<value>LastBubble_Part2_FlutesGroup.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>46.079999999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5f7fdbcb-82d6-4019-aa04-5e149b8e7951}</destination>
+		</relationship>
+	</object>
+</objects>
