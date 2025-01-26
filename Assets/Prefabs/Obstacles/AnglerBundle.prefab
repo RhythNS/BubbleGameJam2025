@@ -300,5 +300,5 @@ MonoBehaviour:
   enemyTransform: {fileID: 173416978188444839}
   waypoints:
   - {fileID: 6142264522290006729}
-  speed: 2
+  speed: 0.5
   flip: 0
