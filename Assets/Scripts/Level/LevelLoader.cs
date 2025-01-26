@@ -90,6 +90,16 @@ public class LevelLoader : MonoBehaviour
         backgroundObjects.Clear();
     }
 
+    public void DeleteAllBackgrounds()
+    {
+
+        foreach (BackgroundObject backgroundObject in backgroundObjects)
+        {
+            Destroy(backgroundObject.gameObject);
+        }
+        backgroundObjects.Clear();
+    }
+
     private void LoadNextLevel()
     {
         if (toLoadLevels.Count == 0)
