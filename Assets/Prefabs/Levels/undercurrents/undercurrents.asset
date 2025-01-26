@@ -24,5 +24,7 @@ MonoBehaviour:
   - {fileID: 8221627996405928208, guid: e41c903cea944ea479cd39aced9cd058, type: 3}
   - {fileID: 4476970407340021905, guid: d0626ee2abaf6b340ace184226781337, type: 3}
   - {fileID: 4895002210341683839, guid: 5d183e3c8e9f8ba418de0a0ef013989b, type: 3}
+  - {fileID: 6299785837506423564, guid: 60d36ab83fca18047a75f128269455a6, type: 3}
+  - {fileID: 3256262463155860669, guid: 824072effa8ae704891baa4a414b3c34, type: 3}
   backgroundObjects: []
   bannerObjects: []

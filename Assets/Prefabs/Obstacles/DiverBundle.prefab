@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 1436316959382472363}
   - component: {fileID: 8181243383610055521}
   - component: {fileID: 2672823648672159}
+  - component: {fileID: 5896764101332986779}
   m_Layer: 0
   m_Name: Diver
   m_TagString: Enemy
@@ -206,6 +207,57 @@ MonoBehaviour:
   - {fileID: 8059250467335988572}
   speed: 1.5
   flip: 0
+--- !u!68 &5896764101332986779
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7796553859621945894}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -6.258981, y: -2.8127654}
+  - {x: -4.917715, y: -4.473404}
+  - {x: -0.26960397, y: -2.6863291}
+  - {x: 3.3829474, y: 0.15298748}
+  - {x: 6.096499, y: 1.7323697}
+  - {x: 3.297645, y: 3.8128934}
+  - {x: 0.26779795, y: 0.7831836}
+  - {x: -3.900669, y: -0.45013762}
+  - {x: -4.374731, y: -2.2827778}
+  - {x: -6.207022, y: -2.7275329}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &9041180297872140745
 GameObject:
   m_ObjectHideFlags: 0
