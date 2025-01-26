@@ -20,3 +20,7 @@ MonoBehaviour:
   - {fileID: 4458994206314974116, guid: 3c1c19ca35d96b1458669ca1951a40e6, type: 3}
   - {fileID: 4381064625470146191, guid: b9e26a69250cee445b4ed8b3104aebbc, type: 3}
   - {fileID: 5719196233554187570, guid: df7d0e7a9f5f4bd4d88847c4afd5c874, type: 3}
+  backgroundObjects: []
+  bannerObjects:
+  - {fileID: 11400000, guid: 16f7bc81d6494f8418d114b755f0c311, type: 2}
+  - {fileID: 11400000, guid: 0b3ddbbc715f3374097e0810cbcbfdb0, type: 2}

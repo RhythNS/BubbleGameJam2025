@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 public class LevelLoader : MonoBehaviour
@@ -14,10 +16,19 @@ public class LevelLoader : MonoBehaviour
     private List<Level> currentLevels = new List<Level>(); // These are instantiated objects
 
     [SerializeField]
-    private float levelChangeDistance = 10.0f;
+    private float levelChangeDistance = 20.0f;
 
     [SerializeField]
-    private float levelDeleteDistance = 10.0f;
+    private float levelDeleteDistance = 20.0f;
+
+    [SerializeField] private float bannerChangeDistance = 20.0f;
+    private List<BackgroundObject> backgroundObjects = new List<BackgroundObject>();
+    private BackgroundObject lastBanner;
+    private int atBanner;
+
+    [SerializeField] private float bannerDistanceMultipler = 2;
+
+    private bool nextBannerRightSide = false;
 
     public static LevelLoader Instance { get; set; }
 
@@ -29,6 +40,8 @@ public class LevelLoader : MonoBehaviour
         }
         Instance = this;
     }
+
+    public float RemainingHeight => toLoadLevels.Sum(level => level.Size.y);
 
     public void Begin(Transform player)
     {
@@ -45,6 +58,7 @@ public class LevelLoader : MonoBehaviour
             Destroy(level.gameObject);
         }
         currentLevels.Clear();
+        lastBanner = null;
     }
 
     private void LoadNextLevel()
@@ -83,9 +97,12 @@ public class LevelLoader : MonoBehaviour
         }
         Debug.Log("Loading biome " + atBiome);
 
+        RandomUtil.Shuffle(biomes[atBiome].BannerObjects);
         toLoadLevels.AddRange(biomes[atBiome].Levels);
         RandomUtil.Shuffle(toLoadLevels);
         atBiome++;
+
+        atBanner = 0;
 
         LoadNextLevel();
     }
@@ -98,6 +115,7 @@ public class LevelLoader : MonoBehaviour
         }
 
         CheckLevels();
+        CheckBackgroundObjects();
     }
 
     private void CheckLevels()
@@ -121,5 +139,65 @@ public class LevelLoader : MonoBehaviour
             currentLevels.RemoveAt(currentLevels.Count - 1);
             Destroy(minLevel.gameObject);
         }
+    }
+
+    private void CheckBackgroundObjects()
+    {
+        if (biomes[atBiome - 1].BannerObjects.Count != 0)
+        {
+            TryCreateBanner();
+        }
+    }
+
+    private void TryCreateBanner()
+    {
+        BackgroundObject nextBanner;
+        if (nextBannerRightSide)
+        {
+            nextBanner = biomes[atBiome - 1].BannerObjects[atBanner].Right;
+        }
+        else
+        {
+            nextBanner = biomes[atBiome - 1].BannerObjects[atBanner].Left;
+        }
+
+        if (lastBanner != null)
+        {
+            if (RemainingHeight < nextBanner.SizeRect.y * bannerDistanceMultipler)
+            {
+                return;
+            }
+            if (lastBanner.transform.position.y + lastBanner.SizeRect.height - bannerChangeDistance > toTrack.position.y)
+            {
+                return;
+            }
+        }
+        float toY;
+        if (lastBanner != null)
+        {
+            toY = lastBanner.transform.position.y + lastBanner.SizeRect.height + Random.Range(5, 10);
+        }
+        else
+        {
+            toY = toTrack.position.y + 20.0f;
+        }
+        Vector3 pos = new Vector3(nextBanner.transform.position.x - 7.3f, toY, nextBanner.transform.position.z);
+        BackgroundObject createdBanner = Instantiate(nextBanner, pos, Quaternion.identity);
+        createdBanner.Init(this);
+        backgroundObjects.Add(createdBanner);
+
+        atBanner++;
+        nextBannerRightSide = !nextBannerRightSide;
+        if (atBanner >= biomes[atBiome - 1].BannerObjects.Count)
+        {
+            atBanner = 0;
+        }
+
+        lastBanner = createdBanner;
+    }
+
+    public void RemoveBackgroundObject(BackgroundObject backgroundObject)
+    {
+        backgroundObjects.Remove(backgroundObject);
     }
 }
