@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -89,7 +90,12 @@ public class PlayerController : MonoBehaviour
     private float _boostMaxSpeed;
     private float _rotationSpeed;
 
+    [Header("Sound References")]
+    [SerializeField] EventReference audio_playerDeath;
+
     //private bool controle = true;
+
+    private Enemy enemyS;
 
     private void Awake()
     {
@@ -114,10 +120,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Health -= 10f;
-        }
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    Health -= 10f;
+        //}
         GameManager.Instance.ButtonCalls.Points += pointsPerSecond * Time.deltaTime;
         if (blowAirDisableTimer > 0)
         {
@@ -281,18 +287,18 @@ public class PlayerController : MonoBehaviour
     {
         if (blowAirDisableTimer > 0 || !Input.GetKey(blowAirKey))
         {
-            //blowParticles.Stop();
+            blowParticles.Stop();
             boostVelocity *= boostDeccelertation;
             return boostVelocity;
         }
         if (Health <= minHealthToBlowAir)
         {
-            //blowParticles.Stop();
+            blowParticles.Stop();
             blowAirDisableTimer = blowAirDisableTime;
             return boostVelocity;
         }
 
-        //if (!blowParticles.isPlaying) { blowParticles.Play(); }
+        if (!blowParticles.isPlaying) { blowParticles.Play(); }
         Health -= blowAirSpeed;
 
         Vector2 boostDir = Quaternion.AngleAxis(rb.rotation, Vector3.back) * Vector2.up;
@@ -325,6 +331,7 @@ public class PlayerController : MonoBehaviour
         if (invurnerableTimer > 0) { return; }
         if (collision.gameObject.tag != "Enemy") { return; }
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        enemyS = enemy; //reference to the enemy that the player hits
         if (enemy == null || enemy.DamageOnCollision == 0) { return; }
         Health -= enemy.DamageOnCollision;
         invurnerableTimer = invurnerableTime;
@@ -373,7 +380,14 @@ public class PlayerController : MonoBehaviour
         SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.enabled = false;
         GameManager.Instance.StartCoroutine(dothething());
+        enemyS.PlayEnemySound();
+        PlayerDeathSound();
         GameManager.Instance.SwitchToGameOver();
+    }
+
+    private void PlayerDeathSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(audio_playerDeath);
     }
 
     private IEnumerator dothething()

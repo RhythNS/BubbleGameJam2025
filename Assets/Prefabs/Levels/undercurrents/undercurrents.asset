@@ -41,6 +41,7 @@ MonoBehaviour:
   - {fileID: 3763854003546999104, guid: 316498ae6a822df4cb9daf51c1973ae8, type: 3}
   - {fileID: 5621710207917902730, guid: bb3b81f1b3de55142b9643189947f7f1, type: 3}
   - {fileID: 8132153757498228411, guid: 9acdbf97290b8314c9b8979fa038559d, type: 3}
+  - {fileID: 3609710177967867853, guid: bc16a9a4956c161439957d7aacbde728, type: 3}
   bannerObjects:
   - {fileID: 11400000, guid: e017bc0ddd55ff448aabe54327448b11, type: 2}
   - {fileID: 11400000, guid: f3dc62a466ba00a45ab9c4cc4c493da9, type: 2}

@@ -43,7 +43,7 @@ public class ButtonCalls : MonoBehaviour
 
     void Start()
     {
-        Points = 9999;
+        Points = 0;
         healthUpgradeText.text = "HEALTH\r\n" + upgradeCosts[healthLevel].ToString();
         regenUpgradeText.text = "REGEN\r\n" + upgradeCosts[regenLevel].ToString();
         moveSpeedUpgradeText.text = "MOVESPEED\r\n" + upgradeCosts[moveSpeedLevel].ToString();
