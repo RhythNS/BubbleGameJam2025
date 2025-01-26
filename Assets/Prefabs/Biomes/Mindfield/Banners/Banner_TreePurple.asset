@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609fa2306375dca4db83ba4e16c518bc, type: 3}
+  m_Name: Banner_TreePurple
+  m_EditorClassIdentifier: 
+  left: {fileID: 2802560089598549985, guid: e5991f0d28825e6419ad6551e1c7f21f, type: 3}
+  right: {fileID: 8347289783582979927, guid: c8098099c624d2b49853f7eebc756a98, type: 3}

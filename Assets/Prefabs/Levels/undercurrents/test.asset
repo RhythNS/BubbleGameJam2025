@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b295cf6df76c44db271091c9a427cd, type: 3}
   m_Name: test
   m_EditorClassIdentifier: 
-  levels: []
+  levels:
+  - {fileID: 6299785837506423564, guid: 60d36ab83fca18047a75f128269455a6, type: 3}
   level1MinDistance: 2
   level1Density: 10
   level1Objects: []
