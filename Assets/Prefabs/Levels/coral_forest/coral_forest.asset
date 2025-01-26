@@ -15,6 +15,10 @@ MonoBehaviour:
   levels:
   - {fileID: 3965212900460078785, guid: bc33e190652771043a35db8031f6c782, type: 3}
   - {fileID: 6699138163614188891, guid: 1b00b9528913cb4429a568047dd11499, type: 3}
+  - {fileID: 8980365341560178999, guid: d5fddd24e4c98b14aa034ddba404be42, type: 3}
+  - {fileID: 4135924378933555745, guid: 053b8954edf33e24ba58105c23332a8b, type: 3}
+  - {fileID: 106149379582775365, guid: ab513ddb1024ada4bb6ba443351ab99c, type: 3}
+  - {fileID: 553284638400247203, guid: d83f87047e9eb5c40a3300b1b176910d, type: 3}
   level1MinDistance: 5
   level1Density: 4
   level1Objects:

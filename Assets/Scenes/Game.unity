@@ -494,6 +494,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1546810923721041161, guid: e5a674c969754e2429edd5c1573e2aad, type: 3}
       insertIndex: -1
       addedObject: {fileID: 309008404}
+    - targetCorrespondingSourceObject: {fileID: 8678665101743784839, guid: e5a674c969754e2429edd5c1573e2aad, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1927455849}
   m_SourcePrefab: {fileID: 100100000, guid: e5a674c969754e2429edd5c1573e2aad, type: 3}
 --- !u!114 &774099707 stripped
 MonoBehaviour:
@@ -565,7 +568,9 @@ MonoBehaviour:
   toTrack: {fileID: 0}
   biomes:
   - {fileID: 11400000, guid: 668f1995945aee743a3f6d2753a0754b, type: 2}
+  - {fileID: 11400000, guid: 9bef40ca91209cd4a818479e297d4e6f, type: 2}
   - {fileID: 11400000, guid: dfd5cb205c57c404685b985eb60fa259, type: 2}
+  - {fileID: 11400000, guid: 3506a631214e57641b8275668103f045, type: 2}
   - {fileID: 11400000, guid: 4f90f70ecbadd0f49b5a24551606d29a, type: 2}
   levelChangeDistance: 25
   levelDeleteDistance: 50
@@ -5574,6 +5579,42 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2105633902}
   m_SourcePrefab: {fileID: 100100000, guid: 37f05a2230016af448b649d8a6fab140, type: 3}
+--- !u!1 &1927455842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8678665101743784839, guid: e5a674c969754e2429edd5c1573e2aad, type: 3}
+  m_PrefabInstance: {fileID: 774099706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1927455849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927455842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 709387000
+      Data2: 1144251366
+      Data3: 1353575099
+      Data4: 1138619093
+    Path: event:/sfx_start
+  Event: 
+  EventPlayTrigger: 19
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2038864055
 GameObject:
   m_ObjectHideFlags: 0
