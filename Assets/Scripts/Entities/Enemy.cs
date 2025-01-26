@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour
 
     public void PlayEnemySound()
     { 
-        if (enemySound.Path.Length > 0)
+        if (!enemySound.IsNull)
         {
             Debug.Log("Played Enemy Death sound");
             FMODUnity.RuntimeManager.PlayOneShot(enemySound);
