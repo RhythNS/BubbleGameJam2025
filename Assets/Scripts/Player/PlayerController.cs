@@ -114,10 +114,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Health -= 10f;
-        }
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    Health -= 10f;
+        //}
         GameManager.Instance.ButtonCalls.Points += pointsPerSecond * Time.deltaTime;
         if (blowAirDisableTimer > 0)
         {
