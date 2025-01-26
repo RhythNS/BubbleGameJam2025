@@ -70,7 +70,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _GradientY: 0.14
+    - _GradientY: 0
     - _IsUnderwater: 1
     - _MaxY: 100
     - _Metallic: 0
