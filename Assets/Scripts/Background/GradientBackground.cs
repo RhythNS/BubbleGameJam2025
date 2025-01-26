@@ -12,16 +12,19 @@ public class GradientBackground : MonoBehaviour
     [SerializeField]
     private int selector;
 
+    private SpriteRenderer spriteRenderer;
+
     private void Awake()
     {
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         material = spriteRenderer.material;
         shader = material.shader;
 
-        propertyY = shader.FindPropertyIndex("Y");
-        propertyGradientY = shader.FindPropertyIndex("GradientY");
+        propertyY = shader.FindPropertyIndex("_Y");
+        Debug.Log("Propperty count: " + shader.GetPropertyCount());
+        propertyGradientY = shader.FindPropertyIndex("_GradientY");
 
-        selector = shader.FindPropertyIndex("IsUnderwater");
+        selector = shader.FindPropertyIndex("_IsUnderwater");
 
         Underwater();
     }
@@ -34,17 +37,24 @@ public class GradientBackground : MonoBehaviour
         material.SetFloat(propertyY, y);
 
         float gradient = LevelLoader.Instance.GetThingForGradient();
+        gradient = Mathf.Clamp01(gradient);
+        
         material.SetFloat(propertyGradientY, gradient);
 
+        Debug.Log(gradient);
+
+        MaterialPropertyBlock block = new MaterialPropertyBlock();
+        block.SetFloat("_GradientY", gradient);
+        spriteRenderer.SetPropertyBlock(block);
     }
 
     public void Credits()
     {
-        material.SetInt(selector, 1);
+        //material.SetInteger
     }
 
     public void Underwater()
     {
-        material.SetInt(selector, 0);
+        //material.SetInt(selector, 0);
     }
 }

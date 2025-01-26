@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{fb9a422f-082a-4839-a9d3-db1accabfe8c}">
+		<property name="name">
+			<value>Pitch_Loudness_Game</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ce6c9d85-0ef6-4fd7-b8b5-c55ef847d010}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{03251be1-e591-4388-8492-cf994e1b9d34}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{03251be1-e591-4388-8492-cf994e1b9d34}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0.5</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
