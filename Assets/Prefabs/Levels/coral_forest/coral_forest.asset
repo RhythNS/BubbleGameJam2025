@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b295cf6df76c44db271091c9a427cd, type: 3}
   m_Name: coral_forest
   m_EditorClassIdentifier: 
-  levels: []
+  levels:
+  - {fileID: 3965212900460078785, guid: bc33e190652771043a35db8031f6c782, type: 3}
   level1MinDistance: 2
   level1Density: 10
   level1Objects: []
