@@ -1,0 +1,402 @@
+fileFormatVersion: 2
+guid: 5fc5be570133cd049b6ee9ed8a5ef8b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1866493732829909857
+    second: Weedend1_0
+  - first:
+      213: 2215115902658918566
+    second: Weedend1_1
+  - first:
+      213: -98875759938197706
+    second: Weedend1_2
+  - first:
+      213: 1584064842403097034
+    second: Weedend1_3
+  - first:
+      213: 1451151471781173690
+    second: Weedend1_4
+  - first:
+      213: 664790023130630620
+    second: Weedend1_5
+  - first:
+      213: -1644157175582611066
+    second: Weedend1_6
+  - first:
+      213: -5056444446941474103
+    second: Weedend1_7
+  - first:
+      213: -4413402885155317684
+    second: Weedend1_8
+  - first:
+      213: -1077494683889614945
+    second: Weedend1_9
+  - first:
+      213: -9215234654505362270
+    second: Weedend1_10
+  - first:
+      213: 2866747117412964904
+    second: Weedend1_11
+  - first:
+      213: -4728711278170837860
+    second: Weedend1_12
+  - first:
+      213: 248169055704449785
+    second: Weedend1_13
+  - first:
+      213: 5299591123525027806
+    second: Weedend1_14
+  - first:
+      213: 5752861665320129612
+    second: Weedend1_15
+  - first:
+      213: -7302584793087519884
+    second: Weedend1_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Weedend1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1178
+        width: 1118
+        height: 2918
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c2e2fc6d1e816e0800000000000000
+      internalID: -1866493732829909857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weedend1_1
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1294
+        width: 516
+        height: 2768
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8bd426d2cadbe10800000000000000
+      internalID: 2215115902658918566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weedend1_2
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 1294
+        width: 460
+        height: 2786
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 637acfb2509b0aef0800000000000000
+      internalID: -98875759938197706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weedend1_3
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 1336
+        width: 385
+        height: 2747
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac92f98d49abbf510800000000000000
+      internalID: 1584064842403097034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weedend1_4
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 1323
+        width: 444
+        height: 2741
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab95dc63396832410800000000000000
+      internalID: 1451151471781173690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weedend1_8
+      rect:
+        serializedVersion: 2
+        x: 3426
+        y: 2481
+        width: 566
+        height: 1338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4812ab857170c2c0800000000000000
+      internalID: -4413402885155317684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weedend1_10
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 211
+        width: 614
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac9658f7e8ec1080800000000000000
+      internalID: -9215234654505362270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weedend1_13
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 175
+        width: 790
+        height: 826
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f20289f07ca17300800000000000000
+      internalID: 248169055704449785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weedend1_15
+      rect:
+        serializedVersion: 2
+        x: 3302
+        y: 500
+        width: 794
+        height: 1673
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c445e53643546df40800000000000000
+      internalID: 5752861665320129612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weedend1_16
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 215
+        width: 450
+        height: 667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47359d942d108aa90800000000000000
+      internalID: -7302584793087519884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 94d7d7c9a62d35d459155b824d96e0f8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Weedend1_0: -1866493732829909857
+      Weedend1_1: 2215115902658918566
+      Weedend1_10: -9215234654505362270
+      Weedend1_13: 248169055704449785
+      Weedend1_15: 5752861665320129612
+      Weedend1_16: -7302584793087519884
+      Weedend1_2: -98875759938197706
+      Weedend1_3: 1584064842403097034
+      Weedend1_4: 1451151471781173690
+      Weedend1_5: 664790023130630620
+      Weedend1_6: -1644157175582611066
+      Weedend1_7: -5056444446941474103
+      Weedend1_8: -4413402885155317684
+      Weedend1_9: -1077494683889614945
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
