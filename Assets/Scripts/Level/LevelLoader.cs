@@ -209,6 +209,9 @@ public class LevelLoader : MonoBehaviour
 
     private void CheckBackgroundObjects()
     {
+        if (atBiome - 1 < 0)
+            return;
+
         if (biomes[atBiome - 1].BannerObjects.Count != 0)
         {
             TryCreateBanner();
