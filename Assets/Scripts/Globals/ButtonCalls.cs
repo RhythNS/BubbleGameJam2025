@@ -6,6 +6,7 @@ public class ButtonCalls : MonoBehaviour
 {
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject upgradeMenu;
+    [SerializeField] private GameObject inputMenu;
     [SerializeField] private int[] upgradeCosts = new int[4] { 50, 100, 200, 500};
     public float[] healthMults = new float[5] {1.0f, 1.25f, 1.5f, 1.75f, 2.0f };
     public float[] regenMults = new float[5] {1.0f, 1.25f, 1.5f, 1.75f, 2.0f };
@@ -64,13 +65,22 @@ public class ButtonCalls : MonoBehaviour
     public void OnClickUpgrades()
     {
         mainMenu.SetActive(false);
+        inputMenu.SetActive(false);
         upgradeMenu.SetActive(true);
     }
 
     public void OnClickMainMenu()
     {
         upgradeMenu.SetActive(false);
+        inputMenu.SetActive(false);
         mainMenu.SetActive(true);
+    }
+
+    public void OnClickInput()
+    {
+        mainMenu.SetActive(false);
+        inputMenu.SetActive(true);
+        upgradeMenu.SetActive(false);
     }
 
     private bool OnClickUpgrade(ref int level, Image[] upgradeImages, TMP_Text upgradeText, string text)

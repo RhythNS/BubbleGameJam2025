@@ -317,10 +317,10 @@ public class PlayerController : MonoBehaviour
     {
         if (invurnerableTimer > 0) { return; }
         if (collision.gameObject.tag != "Enemy") { return; }
-
-        invurnerableTimer = invurnerableTime;
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        if (enemy == null || enemy.DamageOnCollision == 0) { return; }
         Health -= enemy.DamageOnCollision;
+        invurnerableTimer = invurnerableTime;
         //Vector2 forceDir = transform.position - collision.transform.position;
         Vector2 forceDir = transform.position - collision.transform.position;
         forceDir = forceDir.normalized;
@@ -331,9 +331,9 @@ public class PlayerController : MonoBehaviour
     {
         if (invurnerableTimer > 0) { return; }
         if (collision.gameObject.tag != "Enemy") { return; }
-
-        invurnerableTimer = invurnerableTime;
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        if (enemy == null || enemy.DamageOnCollision == 0) { return; }
+        invurnerableTimer = invurnerableTime;
         Health -= enemy.DamageOnCollision;
         Vector2 forceDir = transform.position - collision.transform.position;
         forceDir = forceDir.normalized;

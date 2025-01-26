@@ -109,6 +109,7 @@ MonoBehaviour:
   maxHealth: 100
   maxSizeMult: 3
   minSizeMult: 0.3
+  isImune: 0
   healthGroth: 1.5
   baseHealth: 0.3
   minHealthToBlowAir: 10
@@ -116,7 +117,7 @@ MonoBehaviour:
   boostMaxSpeed: 0.1
   blowAirDisableTime: 3
   airLossPercent: 0.3
-  airBubbleMinHealth: 10
+  airBubbleMinHealth: 5
   boostAccelertation: 0.01
   boostDeccelertation: 0.97
   invurnerableTime: 1

@@ -348,8 +348,8 @@ MonoBehaviour:
   biomes:
   - {fileID: 11400000, guid: 668f1995945aee743a3f6d2753a0754b, type: 2}
   - {fileID: 11400000, guid: dfd5cb205c57c404685b985eb60fa259, type: 2}
-  levelChangeDistance: 10
-  levelDeleteDistance: 10
+  levelChangeDistance: 25
+  levelDeleteDistance: 1000
   bannerChangeDistance: 20
   bannerDistanceMultipler: 2
   gradientStepper: 0.25
@@ -534,17 +534,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-      propertyPath: isImune
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
       propertyPath: camMovement
       value: 
       objectReference: {fileID: 1877247252}
-    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
-      propertyPath: pushBackForce
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
