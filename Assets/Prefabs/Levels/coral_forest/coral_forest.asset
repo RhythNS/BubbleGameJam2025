@@ -15,8 +15,18 @@ MonoBehaviour:
   levels: []
   level1MinDistance: 2
   level1Density: 10
-  level1Objects: []
+  level1Objects:
+  - {fileID: 6059983023733762708, guid: 2bd502d96e6f9c14bae78cc250dac169, type: 3}
+  - {fileID: 4843897659236565230, guid: 9bcfca49fbc4f384a85ae8cbb72ce711, type: 3}
+  - {fileID: 1932477425038072452, guid: ebae58567e70d074f99464e0da441875, type: 3}
+  - {fileID: 5695474583459163805, guid: abf9f9177ac579e488d36d0903eea8a2, type: 3}
+  - {fileID: 3766787323614546450, guid: ad62c2780cc107447b33fa6d2133baf2, type: 3}
+  - {fileID: 7422506340780361184, guid: e6b80fb2a2e671943969872a9836469e, type: 3}
   level2MinDistance: 2
   level2Density: 10
-  level2Objects: []
-  bannerObjects: []
+  level2Objects:
+  - {fileID: 3267152549437438634, guid: dd6c0b2b290385447967e91f5eeb4560, type: 3}
+  - {fileID: 4461964747960916041, guid: fa2a77e313f26a842b9e690f34ab8576, type: 3}
+  bannerObjects:
+  - {fileID: 11400000, guid: a4cddfa160802214bade6016e2073112, type: 2}
+  - {fileID: 11400000, guid: be58ec385ea427741a12900703eaade8, type: 2}
