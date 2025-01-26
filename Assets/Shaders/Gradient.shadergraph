@@ -32,6 +32,9 @@
         },
         {
             "m_Id": "f677de26e37f4ac285f33cc5f822743c"
+        },
+        {
+            "m_Id": "a1e64f4d6347415eaf7168be48681753"
         }
     ],
     "m_Keywords": [],
@@ -1319,7 +1322,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.8299999833106995,
+    "m_Value": 0.05000000074505806,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -2048,6 +2051,9 @@
         },
         {
             "m_Id": "f677de26e37f4ac285f33cc5f822743c"
+        },
+        {
+            "m_Id": "a1e64f4d6347415eaf7168be48681753"
         }
     ]
 }
@@ -3354,15 +3360,15 @@
     "m_Value": 0.0,
     "m_SerializableColorKeys": [
         {
-            "x": 0.0043914420530200008,
-            "y": 0.00856812484562397,
-            "z": 0.06662595272064209,
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
             "w": 0.0
         },
         {
-            "x": 0.027320891618728639,
-            "y": 0.06301002949476242,
-            "z": 0.15592649579048158,
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
             "w": 1.0
         }
     ],
@@ -4511,6 +4517,36 @@
         "w": 0.0
     },
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
+    "m_ObjectId": "a1e64f4d6347415eaf7168be48681753",
+    "m_Guid": {
+        "m_GuidSerialized": "f0ff883e-ad8e-4c59-a816-19bf55159393"
+    },
+    "m_Name": "MainTex",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "MainTex",
+    "m_DefaultReferenceName": "_MainTex",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "m_SerializedTexture": "",
+        "m_Guid": ""
+    },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
+    "m_Modifiable": true,
+    "m_DefaultType": 0
 }
 
 {

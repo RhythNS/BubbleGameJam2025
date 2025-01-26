@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="ParameterPreset" id="{ed00465c-c027-4c94-a23b-b2138bd728a5}">
-		<property name="note" />
 		<property name="name">
 			<value>TrackSelector</value>
 		</property>
@@ -18,6 +17,17 @@
 		</property>
 		<property name="initialValue">
 			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>6</value>
+		</property>
+		<relationship name="automators">
+			<destination>{62594c0f-f2d0-4ba2-853b-d9a75d859da9}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{62594c0f-f2d0-4ba2-853b-d9a75d859da9}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>cursorPosition</value>
 		</property>
 	</object>
 </objects>
