@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f3351ee722edb16458461d14b52cf943
+guid: 56ef5754fe94e894393b6185efa25eea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1244476889673583485
-    second: chain_0
+      213: 3053921588876805144
+    second: pinkcoral_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chain_0
+      name: pinkcoral_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 183
-        height: 788
+        x: 93
+        y: 39
+        width: 675
+        height: 782
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7b4d2c3325454110800000000000000
-      internalID: 1244476889673583485
+      spriteID: 81406e43185b16a20800000000000000
+      internalID: 3053921588876805144
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      chain_0: 1244476889673583485
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
