@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: 3a1d7b63d8563884dbc1be7a89833981
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1032122882076634704
+    second: rockBanner_0
+  - first:
+      213: -3282217853494404006
+    second: rockBanner_1
+  - first:
+      213: 282637572393591512
+    second: rockBanner_2
+  - first:
+      213: 6795805100800139258
+    second: rockBanner_3
+  - first:
+      213: 5320386209455751708
+    second: rockBanner_4
+  - first:
+      213: 1989544197757517592
+    second: rockBanner_5
+  - first:
+      213: -1588433688620038238
+    second: rockBanner_6
+  - first:
+      213: 8417796618832465542
+    second: rockBanner_7
+  - first:
+      213: -9006833488737383615
+    second: rockBanner_8
+  - first:
+      213: -5992969964364786767
+    second: rockBanner_9
+  - first:
+      213: 4618785840580858479
+    second: rockBanner_10
+  - first:
+      213: -6257362320362392639
+    second: rockBanner_11
+  - first:
+      213: -2861036073351422342
+    second: rockBanner_12
+  - first:
+      213: -8076454470640974631
+    second: rockBanner_13
+  - first:
+      213: -7947606882120071616
+    second: rockBanner_14
+  - first:
+      213: -7246617000994809643
+    second: rockBanner_15
+  - first:
+      213: -1779386879885604645
+    second: rockBanner_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rockBanner_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 516
+        width: 1482
+        height: 2361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: affdaf3cbbc8f4e50800000000000000
+      internalID: 6795805100800139258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d783cc265a9a29042a941275dfe36f4c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rockBanner_3: 6795805100800139258
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
