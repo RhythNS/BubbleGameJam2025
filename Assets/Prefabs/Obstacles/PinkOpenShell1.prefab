@@ -154,11 +154,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1234266181
+      Data2: 1130333764
+      Data3: 1526668725
+      Data4: -1689669016
+    Path: event:/sfx_die_star
   speedRange: {x: 0.08, y: 0.08}
   sizeRange: {x: 0.14, y: 0.16}
   damageOnCollision: 1
