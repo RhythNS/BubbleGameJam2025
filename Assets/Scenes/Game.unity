@@ -164,6 +164,7 @@ MonoBehaviour:
   currentState: 0
   levelLoader: {fileID: 987436176}
   buttonCalls: {fileID: 296402004}
+  gradientBackground: {fileID: 0}
 --- !u!4 &503413954
 Transform:
   m_ObjectHideFlags: 0
@@ -487,6 +488,10 @@ PrefabInstance:
     - target: {fileID: 3312888517499707882, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
+      propertyPath: isImune
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8292170984254558483, guid: b8c2f36dd07a85d4dba9a7536219e552, type: 3}
       propertyPath: camMovement

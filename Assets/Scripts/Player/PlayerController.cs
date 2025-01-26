@@ -10,11 +10,14 @@ public class PlayerController : MonoBehaviour
     public float maxSizeMult;
     public float minSizeMult;
 
+    [SerializeField] private bool isImune = false;
+
     [HideInInspector] public float Health 
     { 
         get { return _health; }
         set 
         { 
+            if (isImune) { return; }
             if (value < 0) { _health = 0; Kill(); }
             else if (value > maxHealth) { _health = maxHealth; }
             else { _health = value; }
