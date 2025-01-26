@@ -92,6 +92,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Sound References")]
     [SerializeField] EventReference audio_playerDeath;
+    [SerializeField] EventReference audio_collision;
 
     //private bool controle = true;
 
@@ -347,6 +348,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag != "Enemy") { return; }
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
         if (enemy == null || enemy.DamageOnCollision == 0) { return; }
+        if (enemy != null) { PlayCollisionSound(); }
         invurnerableTimer = invurnerableTime;
         Health -= enemy.DamageOnCollision;
         Vector2 forceDir = transform.position - collision.transform.position;
@@ -390,6 +392,18 @@ public class PlayerController : MonoBehaviour
         if (audio_playerDeath.Path.Length > 0)
         {
             FMODUnity.RuntimeManager.PlayOneShot(audio_playerDeath);
+        }
+        else
+        {
+            Debug.Log("Player Death Anim Sound Reference Not Assigned.");
+        }
+    }
+
+    private void PlayCollisionSound()
+    {
+        if (audio_collision.Path.Length > 0)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(audio_collision);
         }
         else
         {
