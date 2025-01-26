@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Credits
+  m_text: Inputs
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0dc384b694689b49a758e2dc3588929, type: 2}
   m_sharedMaterial: {fileID: -7320507117889631656, guid: f0dc384b694689b49a758e2dc3588929, type: 2}
@@ -1045,6 +1045,7 @@ RectTransform:
   - {fileID: 3553937270505485985}
   - {fileID: 8592141641847632046}
   - {fileID: 1671226807579244446}
+  - {fileID: 5319671325643016286}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1130,6 +1131,36 @@ MonoBehaviour:
   mainMenu: {fileID: 1546810923721041161}
   upgradeMenu: {fileID: 2717900278588913580}
   upgradeCosts: 3200000064000000c8000000f4010000
+  healthMults:
+  - 1
+  - 1.25
+  - 1.5
+  - 1.75
+  - 2
+  regenMults:
+  - 1
+  - 1.25
+  - 1.5
+  - 1.75
+  - 2
+  moveSpeedMults:
+  - 1
+  - 1.25
+  - 1.5
+  - 1.75
+  - 2
+  airLossMults:
+  - 1
+  - 0.85
+  - 0.7
+  - 0.55
+  - 0.4
+  boostMults:
+  - 1
+  - 1.25
+  - 1.5
+  - 1.75
+  - 2
   healthUpgradeText: {fileID: 8166492799693474918}
   healthUpgradeImages:
   - {fileID: 4965181166991995164}
@@ -1161,6 +1192,11 @@ MonoBehaviour:
   - {fileID: 4483108784882505121}
   - {fileID: 527342070535461543}
   pointsText: {fileID: 8871497016411922850}
+  healthLevel: 0
+  regenLevel: 0
+  moveSpeedLevel: 0
+  airLossLevel: 0
+  boostLevel: 0
 --- !u!1 &2303198322816727824
 GameObject:
   m_ObjectHideFlags: 0
@@ -3067,6 +3103,41 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &6831831094996887206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5319671325643016286}
+  m_Layer: 5
+  m_Name: InputsMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5319671325643016286
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6831831094996887206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5626958192022722581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7102863998878127073
 GameObject:
   m_ObjectHideFlags: 0

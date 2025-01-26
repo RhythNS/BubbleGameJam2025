@@ -29,7 +29,7 @@ public class GradientBackground : MonoBehaviour
         material.SetFloat(propertyGradientY, gradientY);
     }
 
-    public void Finish()
+    public void Credits()
     {
         //TODO
     }
