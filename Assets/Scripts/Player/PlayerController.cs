@@ -150,7 +150,7 @@ public class PlayerController : MonoBehaviour
         
         animator.enabled = true;
         anim.enabled = false;
-        transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+        transform.localScale = new Vector3(1f, 1f, 1f);
         enabled = true;
         rb.simulated = true;
         baseScale = transform.localScale;

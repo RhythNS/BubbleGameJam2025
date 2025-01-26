@@ -41,7 +41,7 @@ public class GradientBackground : MonoBehaviour
         
         material.SetFloat(propertyGradientY, gradient);
 
-        Debug.Log(gradient);
+        //Debug.Log(gradient);
 
         MaterialPropertyBlock block = new MaterialPropertyBlock();
         block.SetFloat("_GradientY", gradient);
@@ -50,11 +50,11 @@ public class GradientBackground : MonoBehaviour
 
     public void Credits()
     {
-        //material.SetInteger
+        material.SetInteger("_IsUnderwater", 0);
     }
 
     public void Underwater()
     {
-        //material.SetInt(selector, 0);
+        material.SetInteger("_IsUnderwater", 1);
     }
 }
